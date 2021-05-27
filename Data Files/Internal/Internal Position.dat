@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataFileEntity>
+   <description></description>
+   <name>Internal Position</name>
+   <tag></tag>
+   <containsHeaders>true</containsHeaders>
+   <csvSeperator></csvSeperator>
+   <dataFileGUID>2c2e67cc-28e4-4913-841d-847b6c7844bb</dataFileGUID>
+   <dataSourceUrl></dataSourceUrl>
+   <driver>InternalData</driver>
+   <data>Tr%C6%B0%E1%BB%9Fng+ph%C3%B2ng</data>
+   <data>K%E1%BA%BF+to%C3%A1n</data>
+   <data>gi%C3%A1m+%C4%91%E1%BB%91c</data>
+   <data>Nh%C3%A2n+vi%C3%AAn</data>
+   <data>Lao+c%C3%B4ng</data>
+   <internalDataColumns>
+      <columnIndex>0</columnIndex>
+      <name>Position</name>
+      <size>5</size>
+   </internalDataColumns>
+   <isInternalPath>false</isInternalPath>
+   <query></query>
+   <secureUserAccount>false</secureUserAccount>
+   <sheetName></sheetName>
+   <usingGlobalDBSetting>false</usingGlobalDBSetting>
+</DataFileEntity>

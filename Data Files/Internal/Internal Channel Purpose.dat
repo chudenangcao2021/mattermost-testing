@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataFileEntity>
+   <description></description>
+   <name>Internal Channel Purpose</name>
+   <tag></tag>
+   <containsHeaders>true</containsHeaders>
+   <csvSeperator></csvSeperator>
+   <dataFileGUID>b0ae3346-6d65-4679-b495-a66fe3ea04a8</dataFileGUID>
+   <dataSourceUrl></dataSourceUrl>
+   <driver>InternalData</driver>
+   <data>L%E1%BB%9Di+khuy%C3%AAn%2C+s%E1%BB%B1+h%E1%BB%97+tr%E1%BB%A3</data>
+   <data>B%C3%A0i+vi%E1%BA%BFt+truy%E1%BB%81n+c%E1%BA%A3m+h%E1%BB%A9ng</data>
+   <data>M%E1%BB%A5c+%C4%91%C3%ADch+x%C3%A3+h%E1%BB%99i</data>
+   <data>Nu%C3%B4i+d%C6%B0%E1%BB%A1ng+m%E1%BB%91i+quan+h%E1%BB%87</data>
+   <data>+X%C3%A2y+d%E1%BB%B1ng+n%E1%BB%99i+dung+c%C3%B3+gi%C3%A1+tr%E1%BB%8B</data>
+   <internalDataColumns>
+      <columnIndex>0</columnIndex>
+      <name>ChannelPurpose</name>
+      <size>5</size>
+   </internalDataColumns>
+   <isInternalPath>false</isInternalPath>
+   <query></query>
+   <secureUserAccount>false</secureUserAccount>
+   <sheetName></sheetName>
+   <usingGlobalDBSetting>false</usingGlobalDBSetting>
+</DataFileEntity>

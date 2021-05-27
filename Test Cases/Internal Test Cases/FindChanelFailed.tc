@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>FindChanelFailed</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>344c2710-dc14-4644-b177-edc660d9957b</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>195ca99c-c1ce-4250-b309-3dcd08428559</id>
+      <masked>false</masked>
+      <name>NameChanel</name>
+   </variable>
+</TestCaseEntity>
