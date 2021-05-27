@@ -6,14 +6,14 @@
    <comment></comment>
    <testCaseGuid>eb53df89-97fb-4e54-aa99-db555ce5a02b</testCaseGuid>
    <variable>
-      <defaultValue>'nguyenvana'</defaultValue>
+      <defaultValue>'Minhvu12918'</defaultValue>
       <description></description>
       <id>79e697b4-cead-44ad-9269-a8fbbcddf282</id>
       <masked>false</masked>
       <name>Username</name>
    </variable>
    <variable>
-      <defaultValue>'Tung@123456'</defaultValue>
+      <defaultValue>'Minhvuabc2@'</defaultValue>
       <description></description>
       <id>b55005f8-ef29-4616-baab-8c1ebb1fe629</id>
       <masked>false</masked>

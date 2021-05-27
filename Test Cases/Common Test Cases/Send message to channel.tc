@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Send message to channel</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2512d8b8-ed44-4016-abb4-0aee567940a2</testCaseGuid>
+   <variable>
+      <defaultValue>'message default'</defaultValue>
+      <description></description>
+      <id>b2d1dcd1-0219-4d80-a5f2-ae9e1369d200</id>
+      <masked>false</masked>
+      <name>message</name>
+   </variable>
+</TestCaseEntity>
