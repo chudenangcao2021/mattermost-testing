@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>API - Verify successfuly get users by usernames</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e6f75aed-c97d-4950-9300-e4d595ef79bc</testCaseGuid>
+</TestCaseEntity>

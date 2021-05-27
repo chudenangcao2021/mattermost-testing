@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>API - Verify successfuly get a user by email</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b69c8305-fddc-46a7-bb31-7bb2fbd84606</testCaseGuid>
+</TestCaseEntity>

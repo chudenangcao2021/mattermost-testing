@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>API - Verify successful login</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f069891f-671b-4cf9-95a8-c341e31984a8</testCaseGuid>
+</TestCaseEntity>
