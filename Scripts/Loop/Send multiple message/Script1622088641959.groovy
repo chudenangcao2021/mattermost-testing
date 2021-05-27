@@ -16,11 +16,28 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import java.time.LocalDateTime as LocalDateTime
+import java.time.format.DateTimeFormatter as DateTimeFormatter
 
-WebUI.callTestCase(findTestCase('Common Test Cases/Login'), [('Username') : findTestData('Internal Data for Login').getValue(
-            1, 3), ('Password') : findTestData('Internal Data for Login').getValue(2, 3)], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Common Test Cases/Login'), [('Username') : 'nttuan', ('Password') : '12345678zZ@'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('Page_Mattermost/label_Enter a valid email or username andor password'), 0)
+String message = String.format("This test will sent %d messages using while loop", nMessage)
+
+DateTimeFormatter format = DateTimeFormatter.ofPattern('dd-MM-yyyy HH:mm:ss')
+
+WebUI.callTestCase(findTestCase('Common Test Cases/Send message to channel'), [('message') : message], FailureHandling.STOP_ON_FAILURE)
+
+while (nMessage > 0) {
+    message = String.format('Current time: %s', LocalDateTime.now().format(format))
+
+    WebUI.callTestCase(findTestCase('Common Test Cases/Send message to channel'), [('message') : message])
+
+    Thread.sleep(500)
+	
+	nMessage--;
+}
+
+WebUI.callTestCase(findTestCase('Common Test Cases/Send message to channel'), [('message') : 'Done'])
 
 WebUI.closeBrowser()
 

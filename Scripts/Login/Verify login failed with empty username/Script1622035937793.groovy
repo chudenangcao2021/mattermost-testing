@@ -18,9 +18,9 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Common Test Cases/Login'), [('Username') : findTestData('Internal Data for Login').getValue(
-            1, 3), ('Password') : findTestData('Internal Data for Login').getValue(2, 3)], FailureHandling.STOP_ON_FAILURE)
+            1, 1), ('Password') : findTestData('Internal Data for Login').getValue(2, 1)], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('Page_Mattermost/label_Enter a valid email or username andor password'), 0)
+WebUI.verifyElementPresent(findTestObject('Page_Mattermost/label_Please enter your email or username'), 0)
 
 WebUI.closeBrowser()
 

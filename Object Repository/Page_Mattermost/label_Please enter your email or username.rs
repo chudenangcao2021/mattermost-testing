@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>label_Enter a valid email or username andor_ef8acb</name>
+   <name>label_Please enter your email or username</name>
    <tag></tag>
-   <elementGuidId>2d8562f7-9d2f-4554-86a2-ee3c1ce48f7e</elementGuidId>
+   <elementGuidId>6117fb10-11d0-4fac-a4c2-a1c94c4c765c</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
@@ -35,7 +35,7 @@
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Enter a valid email or username and/or password.</value>
+      <value>Please enter your email or username</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -71,20 +71,6 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Sign in'])[1]/preceding::label[1]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='I forgot my password.'])[1]/preceding::label[1]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Enter a valid email or username and/or password.']/parent::*</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>

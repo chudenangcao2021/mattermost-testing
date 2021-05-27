@@ -17,10 +17,8 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Common Test Cases/Login'), [('Username') : findTestData('Internal Data for Login').getValue(
-            1, 3), ('Password') : findTestData('Internal Data for Login').getValue(2, 3)], FailureHandling.STOP_ON_FAILURE)
+WebUI.setText(findTestObject('Page_TEST CHANNEL - TEAM NAME Mattermost/textarea_Write to TEST CHANNEL_post_textbox'), message)
 
-WebUI.verifyElementPresent(findTestObject('Page_Mattermost/label_Enter a valid email or username andor password'), 0)
-
-WebUI.closeBrowser()
+WebUI.sendKeys(findTestObject('Page_TEST CHANNEL - TEAM NAME Mattermost/textarea_Write to TEST CHANNEL_post_textbox'), Keys.chord(
+        Keys.ENTER))
 
