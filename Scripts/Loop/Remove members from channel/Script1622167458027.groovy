@@ -17,8 +17,18 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.setText(findTestObject('Page_TEST CHANNEL - TEAM NAME Mattermost/textarea_Write to TEST CHANNEL_post_textbox'), message)
+WebUI.openBrowser('')
 
-WebUI.sendKeys(findTestObject('Page_TEST CHANNEL - TEAM NAME Mattermost/textarea_Write to TEST CHANNEL_post_textbox'), Keys.chord(
-        Keys.ENTER))
+WebUI.navigateToUrl('https://chudenangcao2021.cf/')
+
+WebUI.setText(findTestObject('Object Repository/ChannelMember/Page_Mattermost/input_All team communication in one place, _dcc84b'), 
+    'nttuan')
+
+WebUI.setEncryptedText(findTestObject('Object Repository/ChannelMember/Page_Mattermost/input_All team communication in one place, _a3edc6'), 
+    'RigbBhfdqOAxBLROYPS7Ug==')
+
+WebUI.sendKeys(findTestObject('Object Repository/ChannelMember/Page_Mattermost/input_All team communication in one place, _a3edc6'), 
+    Keys.chord(Keys.ENTER))
+
+WebUI.closeBrowser()
 

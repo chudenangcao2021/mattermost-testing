@@ -25,19 +25,23 @@ String message = String.format("This test will sent %d messages using while loop
 
 DateTimeFormatter format = DateTimeFormatter.ofPattern('dd-MM-yyyy HH:mm:ss')
 
-WebUI.callTestCase(findTestCase('Common Test Cases/Send message to channel'), [('message') : message], FailureHandling.STOP_ON_FAILURE)
+WebUI.setText(findTestObject('Page_TEST CHANNEL - TEAM NAME Mattermost/textarea_Write to TEST CHANNEL_post_textbox'), message)
+
+WebUI.sendKeys(findTestObject('Page_TEST CHANNEL - TEAM NAME Mattermost/textarea_Write to TEST CHANNEL_post_textbox'), Keys.chord(
+		Keys.ENTER))
 
 while (nMessage > 0) {
     message = String.format('Current time: %s', LocalDateTime.now().format(format))
 
-    WebUI.callTestCase(findTestCase('Common Test Cases/Send message to channel'), [('message') : message])
+    WebUI.setText(findTestObject('Page_TEST CHANNEL - TEAM NAME Mattermost/textarea_Write to TEST CHANNEL_post_textbox'), message)
+
+	WebUI.sendKeys(findTestObject('Page_TEST CHANNEL - TEAM NAME Mattermost/textarea_Write to TEST CHANNEL_post_textbox'), Keys.chord(
+		Keys.ENTER))
 
     Thread.sleep(500)
 	
 	nMessage--;
 }
-
-WebUI.callTestCase(findTestCase('Common Test Cases/Send message to channel'), [('message') : 'Done'])
 
 WebUI.closeBrowser()
 
