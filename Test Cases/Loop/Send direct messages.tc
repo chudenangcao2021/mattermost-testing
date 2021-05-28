@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Send direct messages</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d70b999f-35aa-4cf4-863c-93935d3d75f6</testCaseGuid>
+   <variable>
+      <defaultValue>'nguyenvanb'</defaultValue>
+      <description></description>
+      <id>5e5837ff-f525-4a24-9c4f-b27a80667327</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+   <variable>
+      <defaultValue>5</defaultValue>
+      <description></description>
+      <id>5f705292-cd0a-4168-9fc7-73c0b79ca7bd</id>
+      <masked>false</masked>
+      <name>nMessage</name>
+   </variable>
+</TestCaseEntity>

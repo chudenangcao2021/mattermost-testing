@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Send multiple messages</name>
+   <name>Send messages to private channel</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>9b3e7725-1cf0-46a3-a549-225a2071369e</testCaseGuid>
+   <testCaseGuid>33faad38-d2f0-4a0f-a980-bd71dc9af283</testCaseGuid>
    <variable>
-      <defaultValue>3</defaultValue>
+      <defaultValue>5</defaultValue>
       <description></description>
-      <id>6aef057d-ef80-4686-84ce-8da2a9c54e38</id>
+      <id>519b20eb-0c78-45d8-a7b4-16ca902d6198</id>
       <masked>false</masked>
       <name>nMessage</name>
    </variable>

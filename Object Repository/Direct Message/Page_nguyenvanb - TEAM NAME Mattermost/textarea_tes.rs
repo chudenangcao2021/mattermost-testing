@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>textarea_hell</name>
+   <name>textarea_tes</name>
    <tag></tag>
-   <elementGuidId>138f85ce-9498-4c05-8145-6e46f18a128b</elementGuidId>
+   <elementGuidId>332bb1b2-7e5c-4d9c-a63c-c2713fbe4edb</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
@@ -77,7 +77,7 @@
       <matchCondition>equals</matchCondition>
       <name>aria-label</name>
       <type>Main</type>
-      <value>write to test channel</value>
+      <value>write to nguyenvanb</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -91,7 +91,7 @@
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>hell</value>
+      <value>tes</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -119,14 +119,14 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)=':beer:'])[1]/following::textarea[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='nttuan'])[1]/following::textarea[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='nguyenvanb'])[2]/following::textarea[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Today'])[1]/following::textarea[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -147,7 +147,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='hell']/parent::*</value>
+      <value>//*/text()[normalize-space(.)='tes']/parent::*</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>

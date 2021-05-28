@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>textarea_helll</name>
+   <name>textarea_Write to private channel_post_textbox</name>
    <tag></tag>
-   <elementGuidId>8dc1c74e-743f-438f-b5d8-718f91240b89</elementGuidId>
+   <elementGuidId>02818020-6c26-4c57-9512-1972fba4d3e3</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
@@ -77,7 +77,7 @@
       <matchCondition>equals</matchCondition>
       <name>aria-label</name>
       <type>Main</type>
-      <value>write to test channel</value>
+      <value>write to private channel</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -85,13 +85,6 @@
       <name>dir</name>
       <type>Main</type>
       <value>auto</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>text</name>
-      <type>Main</type>
-      <value>helll</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -113,41 +106,6 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='centerChannelFooter']/div/div/div[2]/div/textarea</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)=':beer:'])[1]/following::textarea[1]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='nguyenvanb'])[2]/following::textarea[1]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='**bold**'])[1]/preceding::textarea[2]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='*italic*'])[1]/preceding::textarea[2]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>//*/text()[normalize-space(.)='helll']/parent::*</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>

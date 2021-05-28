@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Send messages to public channel</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9b3e7725-1cf0-46a3-a549-225a2071369e</testCaseGuid>
+   <variable>
+      <defaultValue>3</defaultValue>
+      <description></description>
+      <id>6aef057d-ef80-4686-84ce-8da2a9c54e38</id>
+      <masked>false</masked>
+      <name>nMessage</name>
+   </variable>
+</TestCaseEntity>
