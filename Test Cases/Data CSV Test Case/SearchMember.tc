@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>InviteMember</name>
+   <name>SearchMember</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>aa25e7a6-3c6b-4159-9d19-6d2e5a22dccd</testCaseGuid>
+   <testCaseGuid>91206b93-420b-4c4f-9ec7-889a31c72298</testCaseGuid>
 </TestCaseEntity>

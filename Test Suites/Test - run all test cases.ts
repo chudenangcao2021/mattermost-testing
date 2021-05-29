@@ -66,12 +66,6 @@
       <testCaseId>Test Cases/Data CSV Test Case/ChangEmail</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>1f750a4c-8e25-4195-8b5c-40cddd40da97</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Data CSV Test Case/InviteMember</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
       <guid>3d8844d8-a01c-4e6d-aab5-14156f752d39</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
