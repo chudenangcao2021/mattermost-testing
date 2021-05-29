@@ -20,7 +20,7 @@
       <name>password</name>
    </variable>
    <variable>
-      <defaultValue>'English'</defaultValue>
+      <defaultValue>'Italiano'</defaultValue>
       <description></description>
       <id>93d5d8cd-31b7-49e7-bac0-0c4555439a2c</id>
       <masked>false</masked>

@@ -292,6 +292,18 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/TestCasesIf/ChangeUserNameIfLessTen</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>385d4b5f-6fbe-45a1-8554-00f7200563af</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>ded4549e-b82a-4956-8717-5afa3b0a583e</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>e77f1145-14a0-412f-87b9-3525f9b6116b</guid>
@@ -310,5 +322,17 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/TestCasesIf/Time24hIfUserNameThanTen</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>18cadcc7-1f91-4235-a5e1-4b81246c2258</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>fdae9993-2909-4f63-bc96-382e8604c44d</variableId>
+      </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

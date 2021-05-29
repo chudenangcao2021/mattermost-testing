@@ -5,4 +5,18 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>02abce39-a61b-4bd7-a85b-7632e7c23ed6</testCaseGuid>
+   <variable>
+      <defaultValue>'cxtuan'</defaultValue>
+      <description></description>
+      <id>18cadcc7-1f91-4235-a5e1-4b81246c2258</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+   <variable>
+      <defaultValue>'01672471821nT@'</defaultValue>
+      <description></description>
+      <id>fdae9993-2909-4f63-bc96-382e8604c44d</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
 </TestCaseEntity>
