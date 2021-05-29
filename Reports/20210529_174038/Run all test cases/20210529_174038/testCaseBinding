@@ -1,0 +1,41 @@
+{"testCaseName":"Test Cases/API/API - Cannot receive a user list after logout","testCaseId":"Test Cases/API/API - Cannot receive a user list after logout"}
+{"testCaseName":"Test Cases/API/API - Verify successful login","testCaseId":"Test Cases/API/API - Verify successful login"}
+{"testCaseName":"Test Cases/API/API - Verify successfuly get a user by email","testCaseId":"Test Cases/API/API - Verify successfuly get a user by email"}
+{"testCaseName":"Test Cases/API/API - Verify successfuly get a user by username","testCaseId":"Test Cases/API/API - Verify successfuly get a user by username"}
+{"testCaseName":"Test Cases/API/API - Verify successfuly get a user list","testCaseId":"Test Cases/API/API - Verify successfuly get a user list"}
+{"testCaseName":"Test Cases/API/API - Verify successfuly get total count of users in the system","testCaseId":"Test Cases/API/API - Verify successfuly get total count of users in the system"}
+{"testCaseName":"Test Cases/API/API - Verify successfuly get users by ids","testCaseId":"Test Cases/API/API - Verify successfuly get users by ids"}
+{"testCaseName":"Test Cases/API/API - Verify successfuly get users by usernames","testCaseId":"Test Cases/API/API - Verify successfuly get users by usernames"}
+{"testCaseName":"Test Cases/Login/Verify login failed with empty password","testCaseId":"Test Cases/Login/Verify login failed with empty password"}
+{"testCaseName":"Test Cases/Login/Verify login failed with empty username","testCaseId":"Test Cases/Login/Verify login failed with empty username"}
+{"testCaseName":"Test Cases/Login/Verify login failed with invalid password","testCaseId":"Test Cases/Login/Verify login failed with invalid password"}
+{"testCaseName":"Test Cases/Login/Verify login failed with invalid username","testCaseId":"Test Cases/Login/Verify login failed with invalid username"}
+{"testCaseName":"Test Cases/Login/Verify successful login","testCaseId":"Test Cases/Login/Verify successful login"}
+{"testCaseName":"Test Cases/SwitchCaseTest/ChangeLanguge","testCaseId":"Test Cases/SwitchCaseTest/ChangeLanguge"}
+{"testCaseName":"Test Cases/SwitchCaseTest/CallChangeDefaultLanguage","testCaseId":"Test Cases/SwitchCaseTest/CallChangeDefaultLanguage"}
+{"testCaseName":"Test Cases/SwitchCaseTest/ChangeNotificationEmail","testCaseId":"Test Cases/SwitchCaseTest/ChangeNotificationEmail"}
+{"testCaseName":"Test Cases/SwitchCaseTest/CallChangeDefaultNotificationEmail","testCaseId":"Test Cases/SwitchCaseTest/CallChangeDefaultNotificationEmail"}
+{"testCaseName":"Test Cases/SwitchCaseTest/NumberOfDirectMessages","testCaseId":"Test Cases/SwitchCaseTest/NumberOfDirectMessages"}
+{"testCaseName":"Test Cases/SwitchCaseTest/CallChangeDefaultNumberOfDirectMessage","testCaseId":"Test Cases/SwitchCaseTest/CallChangeDefaultNumberOfDirectMessage"}
+{"testCaseName":"Test Cases/SwitchCaseTest/ReplyNotification","testCaseId":"Test Cases/SwitchCaseTest/ReplyNotification"}
+{"testCaseName":"Test Cases/SwitchCaseTest/TeammateNameDisplay","testCaseId":"Test Cases/SwitchCaseTest/TeammateNameDisplay"}
+{"testCaseName":"Test Cases/Loop/Add members to channel","testCaseId":"Test Cases/Loop/Add members to channel"}
+{"testCaseName":"Test Cases/Loop/Search messages","testCaseId":"Test Cases/Loop/Search messages"}
+{"testCaseName":"Test Cases/Loop/Send direct messages","testCaseId":"Test Cases/Loop/Send direct messages"}
+{"testCaseName":"Test Cases/Loop/Send messages to private channel","testCaseId":"Test Cases/Loop/Send messages to private channel"}
+{"testCaseName":"Test Cases/Loop/Send messages to public channel","testCaseId":"Test Cases/Loop/Send messages to public channel"}
+{"testCaseName":"Test Cases/Internal Test Cases/CreateCategory","testCaseId":"Test Cases/Internal Test Cases/CreateCategory"}
+{"testCaseName":"Test Cases/Internal Test Cases/CreateChannelPrivate","testCaseId":"Test Cases/Internal Test Cases/CreateChannelPrivate"}
+{"testCaseName":"Test Cases/Internal Test Cases/CreateChannelPublic","testCaseId":"Test Cases/Internal Test Cases/CreateChannelPublic"}
+{"testCaseName":"Test Cases/Internal Test Cases/CreateTeam","testCaseId":"Test Cases/Internal Test Cases/CreateTeam"}
+{"testCaseName":"Test Cases/Internal Test Cases/EditChannelHeader","testCaseId":"Test Cases/Internal Test Cases/EditChannelHeader"}
+{"testCaseName":"Test Cases/Internal Test Cases/EditChannelPurpose","testCaseId":"Test Cases/Internal Test Cases/EditChannelPurpose"}
+{"testCaseName":"Test Cases/Internal Test Cases/EditFullName","testCaseId":"Test Cases/Internal Test Cases/EditFullName"}
+{"testCaseName":"Test Cases/Internal Test Cases/EditNickName","testCaseId":"Test Cases/Internal Test Cases/EditNickName"}
+{"testCaseName":"Test Cases/Internal Test Cases/EditPosition","testCaseId":"Test Cases/Internal Test Cases/EditPosition"}
+{"testCaseName":"Test Cases/Internal Test Cases/EditUsername","testCaseId":"Test Cases/Internal Test Cases/EditUsername"}
+{"testCaseName":"Test Cases/Internal Test Cases/FindChanelFailed","testCaseId":"Test Cases/Internal Test Cases/FindChanelFailed"}
+{"testCaseName":"Test Cases/Internal Test Cases/FindChanelSuccess","testCaseId":"Test Cases/Internal Test Cases/FindChanelSuccess"}
+{"testCaseName":"Test Cases/Internal Test Cases/RenameChannel","testCaseId":"Test Cases/Internal Test Cases/RenameChannel"}
+{"testCaseName":"Test Cases/Internal Test Cases/SearchInChannel","testCaseId":"Test Cases/Internal Test Cases/SearchInChannel"}
+{"testCaseName":"Test Cases/Internal Test Cases/Successful Login","testCaseId":"Test Cases/Internal Test Cases/Successful Login"}

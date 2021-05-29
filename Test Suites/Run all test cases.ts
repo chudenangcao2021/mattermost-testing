@@ -287,4 +287,82 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Internal Test Cases/EditChannelHeader</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>4d45b614-fe25-428d-b185-0d359bd84dfb</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Internal Test Cases/EditChannelPurpose</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>bc8e0134-4a70-4ac6-9895-4519e483a654</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Internal Test Cases/EditFullName</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>437343d7-bb2e-4cb7-8945-4fdd8ba89433</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Internal Test Cases/EditNickName</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a69e9a15-6001-40da-af41-555c4b909d81</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Internal Test Cases/EditPosition</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>80249a31-bdd6-43f7-89a7-e395f9c414ef</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Internal Test Cases/EditUsername</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>ca87f1d5-4579-4eb9-83a9-7c71a9fd5ff8</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Internal Test Cases/FindChanelFailed</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>195ca99c-c1ce-4250-b309-3dcd08428559</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>757560e1-c1cb-461a-85fb-ff872f5066cf</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Internal Test Cases/FindChanelSuccess</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>4fa4dee0-d9f7-438a-846e-256bded8dc67</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Internal Test Cases/RenameChannel</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>b880fd6e-7968-4c66-9181-e24d7f43d6f3</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Internal Test Cases/SearchInChannel</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>73b30d4b-a350-4747-a2c1-7cdcd75fea0f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Internal Test Cases/Successful Login</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>9d1c9308-ffce-4a71-95ba-ec36af942a87</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>4db07a11-2d40-4ef5-9a6e-de0cab1f71c0</variableId>
+      </variableLink>
+   </testCaseLink>
 </TestSuiteEntity>

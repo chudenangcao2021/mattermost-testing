@@ -8,11 +8,11 @@
    <dataFileGUID>861571ee-54fe-460d-8a5f-83847d31d9e6</dataFileGUID>
    <dataSourceUrl></dataSourceUrl>
    <driver>InternalData</driver>
-   <data>Channel+private+12</data>
-   <data>Channel+private+22</data>
-   <data>Channel+private+32</data>
-   <data>Channel+private+42</data>
-   <data>Channel+private+52</data>
+   <data>Channel+private+122</data>
+   <data>Channel+private+222</data>
+   <data>Channel+private+322</data>
+   <data>Channel+private+422</data>
+   <data>Channel+private+522</data>
    <internalDataColumns>
       <columnIndex>0</columnIndex>
       <name>Name</name>
