@@ -1,0 +1,14 @@
+{
+  "brokenTestObjects": [
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/SwitchCase/NumberOfDirectMessages/Page_span_Town Square - TEAM NAME Mattermost/svg_All Direct Messages_css-19bqh2r",
+      "brokenLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027All Direct Messages\u0027])[1]/following::*[name()\u003d\u0027svg\u0027][1]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Number of direct messages to show\u0027])[2]/following::*[name()\u003d\u0027svg\u0027][1]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/SwitchCase/NumberOfDirectMessages/Page_span_Town Square - TEAM NAME Mattermost/svg_All Direct Messages_css-19bqh2r_neighbor.png"
+    }
+  ]
+}
