@@ -35,7 +35,7 @@ switch (lang) {
         WebUI.click(findTestObject('Object Repository/SwitchCase/Page_span_Town Square - TEAM NAME Mattermost/div_Italiano'))
 
         break
-    case '한국어 (Alpha)':
+    case 'Alpha':
         WebUI.click(findTestObject('Object Repository/SwitchCase/Page_span_Town Square - TEAM NAME Mattermost/div_(Alpha)'))
 
         break

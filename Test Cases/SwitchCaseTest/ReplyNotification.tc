@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ReplyNotification</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f39e1edb-0907-433f-83fb-37f9f3fb021a</testCaseGuid>
+   <variable>
+      <defaultValue>'donot'</defaultValue>
+      <description></description>
+      <id>e729a256-9fbc-4f7b-b74b-e27d5b1caad8</id>
+      <masked>false</masked>
+      <name>replyNotificationType</name>
+   </variable>
+</TestCaseEntity>

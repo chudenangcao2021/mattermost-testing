@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>NumberOfDirectMessages</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0cef7e17-ca58-48df-a906-c0befc3749e1</testCaseGuid>
+   <variable>
+      <defaultValue>40</defaultValue>
+      <description></description>
+      <id>fb631abd-8716-4105-a21d-85c87a700729</id>
+      <masked>false</masked>
+      <name>nMessage</name>
+   </variable>
+</TestCaseEntity>
