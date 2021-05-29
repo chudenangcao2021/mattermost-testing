@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IfSwitchChannel</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8a28e14c-3a9b-4772-9ec3-ea3d59feab8e</testCaseGuid>
+   <variable>
+      <defaultValue>'cxtuan'</defaultValue>
+      <description></description>
+      <id>a9431cb9-9064-405f-b7b7-d6ef52aea595</id>
+      <masked>false</masked>
+      <name>Username</name>
+   </variable>
+   <variable>
+      <defaultValue>'01672471821nnT@'</defaultValue>
+      <description></description>
+      <id>b06cf569-771d-42fd-9049-ae5aca91f8b8</id>
+      <masked>false</masked>
+      <name>Password</name>
+   </variable>
+</TestCaseEntity>
