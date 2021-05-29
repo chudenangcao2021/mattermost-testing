@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ChangeNotificationEmail</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>de5db249-f53e-45f0-a509-db2e7e6328d7</testCaseGuid>
+   <variable>
+      <defaultValue>'cxtuan'</defaultValue>
+      <description></description>
+      <id>6e465efe-90c5-46f8-b598-b8e81fcf206b</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+   <variable>
+      <defaultValue>'01672471821nT@'</defaultValue>
+      <description></description>
+      <id>5377ce42-26b6-4b9e-8a58-c5714b4748fe</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
+   <variable>
+      <defaultValue>'no'</defaultValue>
+      <description></description>
+      <id>7d152f06-c0f3-442e-91d7-f63c124468b1</id>
+      <masked>false</masked>
+      <name>notify</name>
+   </variable>
+</TestCaseEntity>

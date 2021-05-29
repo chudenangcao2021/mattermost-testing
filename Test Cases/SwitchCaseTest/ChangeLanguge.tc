@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ChangeLanguge</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0ce49979-ce44-4a0b-9392-0a0334cddbe3</testCaseGuid>
+   <variable>
+      <defaultValue>'cxtuan'</defaultValue>
+      <description></description>
+      <id>2b92c241-6cb3-4219-b592-62ef68bf0f19</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+   <variable>
+      <defaultValue>'01672471821nT@'</defaultValue>
+      <description></description>
+      <id>d3fa8e00-0de5-4b73-8be7-c8caa2da22bd</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
+   <variable>
+      <defaultValue>'English'</defaultValue>
+      <description></description>
+      <id>93d5d8cd-31b7-49e7-bac0-0c4555439a2c</id>
+      <masked>false</masked>
+      <name>language</name>
+   </variable>
+</TestCaseEntity>

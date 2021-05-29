@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TeammateNameDisplay</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>657f699c-d6aa-487d-aed4-50e5d1c393c6</testCaseGuid>
+   <variable>
+      <defaultValue>'cxtuan'</defaultValue>
+      <description></description>
+      <id>97eba77c-3455-4fb2-9d12-21bce24664c1</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+   <variable>
+      <defaultValue>'01672471821nT@'</defaultValue>
+      <description></description>
+      <id>069f9f1a-8f58-4470-a6c7-f18391fcc025</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
+   <variable>
+      <defaultValue>'nickname'</defaultValue>
+      <description></description>
+      <id>60e4f807-f278-4348-81fa-930d959aaec8</id>
+      <masked>false</masked>
+      <name>show</name>
+   </variable>
+</TestCaseEntity>
