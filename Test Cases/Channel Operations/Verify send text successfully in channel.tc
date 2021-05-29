@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>Verify send text successfully in channel</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>73c7845c-7f74-40f1-9bf0-92d46a7754fc</testCaseGuid>
-</TestCaseEntity>
