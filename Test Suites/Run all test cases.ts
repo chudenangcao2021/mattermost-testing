@@ -203,4 +203,88 @@
          <variableId>60e4f807-f278-4348-81fa-930d959aaec8</variableId>
       </variableLink>
    </testCaseLink>
+   <testCaseLink>
+      <guid>385265ed-e731-4105-9c9e-732241ce53f2</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Loop/Add members to channel</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>14e19d89-08a8-4e48-bb25-6b0a01262959</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Loop/Search messages</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>21bb3482-6779-4a44-a4e0-6094a06bb2ac</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Loop/Send direct messages</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>5e5837ff-f525-4a24-9c4f-b27a80667327</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>5f705292-cd0a-4168-9fc7-73c0b79ca7bd</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>279c0eb8-0031-4bee-a616-c603e0902ccd</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Loop/Send messages to private channel</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>519b20eb-0c78-45d8-a7b4-16ca902d6198</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>d80d7494-f563-46c7-9077-382e426c3aa0</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Loop/Send messages to public channel</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>6aef057d-ef80-4686-84ce-8da2a9c54e38</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>3bd5da10-a93b-4716-80f2-419c50422d56</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Internal Test Cases/CreateCategory</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>48bc0598-6a08-4736-9b8f-86ec9450a3ac</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Internal Test Cases/CreateChannelPrivate</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>8cba8959-31fb-4a92-a3c8-e0751cf6ab34</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Internal Test Cases/CreateChannelPublic</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>b041fa4a-8e37-46cc-a0e2-43999be8b9c3</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Internal Test Cases/CreateTeam</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>8b14dfa2-4431-4b2c-8281-af615dda4796</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Internal Test Cases/EditChannelHeader</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>
