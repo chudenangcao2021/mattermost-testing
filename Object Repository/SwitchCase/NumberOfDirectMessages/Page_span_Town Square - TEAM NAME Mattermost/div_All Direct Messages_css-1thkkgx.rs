@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_All Direct Messages_css-1thkkgx-indicatorContainer react-select__indicator react-select__dropdown-indicator</name>
+   <name>div_All Direct Messages_css-1thkkgx</name>
    <tag></tag>
    <elementGuidId>d3040a45-6a86-4681-b7fd-89bfc6994b74</elementGuidId>
    <selectorCollection>

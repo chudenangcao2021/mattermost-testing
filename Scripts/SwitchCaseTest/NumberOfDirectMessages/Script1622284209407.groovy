@@ -27,7 +27,7 @@ WebUI.click(findTestObject('Object Repository/SwitchCase/NumberOfDirectMessages/
 
 WebUI.click(findTestObject('Object Repository/SwitchCase/NumberOfDirectMessages/Page_span_Town Square - TEAM NAME Mattermost/span_Edit'))
 
-WebUI.click(findTestObject('SwitchCase/NumberOfDirectMessages/Page_span_Town Square - TEAM NAME Mattermost/div_All Direct Messages_css-1thkkgx-indicatorContainer react-select__indicator react-select__dropdown-indicator'))
+WebUI.click(findTestObject('SwitchCase/NumberOfDirectMessages/Page_span_Town Square - TEAM NAME Mattermost/div_All Direct Messages_css-1thkkgx'))
 
 switch (nMessage) {
     case 10:
