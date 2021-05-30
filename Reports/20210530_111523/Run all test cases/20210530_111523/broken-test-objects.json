@@ -1,0 +1,54 @@
+{
+  "brokenTestObjects": [
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/ChanelMember/Page_Channel to test add  remove members - _a376a4/input_Search for people_react-select-2-input",
+      "brokenLocator": "//input[@id\u003d\u0027react-select-2-input\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//div[@id\u003d\u0027selectItems\u0027]/div/div/div[2]/div/input",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/20210530_111523/Run all test cases/20210530_111523/Object Repository/ChanelMember/Page_Channel to test add  remove members - _a376a4/input_Search for people_react-select-2-input_idRelative.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Page_Off-Topic - TEAM NAME Mattermost/span_Save",
+      "brokenLocator": "//button[@id\u003d\u0027save-button\u0027]/span",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Cancel\u0027])[1]/following::span[1]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/20210530_111523/Run all test cases/20210530_111523/Object Repository/Page_Off-Topic - TEAM NAME Mattermost/span_Save_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Account Setting/Page_TEST CHANNEL - TEAM NAME Mattermost/input_Username_username",
+      "brokenLocator": "//input[@id\u003d\u0027username\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//div[@id\u003d\u0027generalSettings\u0027]/div[2]/section/div/div/div/div/div/input",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/20210530_111523/Run all test cases/20210530_111523/Object Repository/Account Setting/Page_TEST CHANNEL - TEAM NAME Mattermost/input_Username_username_idRelative.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Page_Town Square - TEAM NAME Mattermost/svg",
+      "brokenLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Town Square\u0027])[3]/following::*[name()\u003d\u0027svg\u0027][1]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Drop a file to upload it.\u0027])[1]/following::*[name()\u003d\u0027svg\u0027][1]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/20210530_111523/Run all test cases/20210530_111523/Object Repository/Page_Town Square - TEAM NAME Mattermost/svg_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/SetStatus/Page_TEST CHANNEL - TEAM NAME Mattermost/input_Set a status_MaxLengthInput form-control",
+      "brokenLocator": "(//input[@value\u003d\u0027\u0027])[2]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//div[@id\u003d\u0027custom_status_modal\u0027]/div/div/form/div/div[2]/div/div/div[2]/input",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/20210530_111523/Run all test cases/20210530_111523/Object Repository/SetStatus/Page_TEST CHANNEL - TEAM NAME Mattermost/input_Set a status_MaxLengthInput form-control_idRelative.png"
+    }
+  ]
+}
