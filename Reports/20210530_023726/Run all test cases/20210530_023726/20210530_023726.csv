@@ -1,0 +1,391 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Run all test cases,Chrome 91.0.4472.77,,,2021-05-30 03:37:35,2021-05-30 03:59:53,22m - 18.046s,FAILED
+,,,,,,,
+Test Cases/API/API - Cannot receive a user list after logout,Chrome 91.0.4472.77,,,2021-05-30 03:37:36,2021-05-30 03:37:39,2.303s,PASSED
+"loginResponse = sendRequest(findTestObject(""API/Login""))",Chrome 91.0.4472.77,Get token,,2021-05-30 03:37:37,2021-05-30 03:37:38,1.350s,PASSED
+"token = loginResponse.getHeaderField(""Token"")",Chrome 91.0.4472.77,,,2021-05-30 03:37:38,2021-05-30 03:37:38,0.015s,PASSED
+"out.println(""Token: "" + token)",Chrome 91.0.4472.77,,,2021-05-30 03:37:38,2021-05-30 03:37:38,0.025s,PASSED
+HTTPHeader = new java.util.ArrayList(),Chrome 91.0.4472.77,Create new ArrayList,,2021-05-30 03:37:38,2021-05-30 03:37:38,0.000s,PASSED
+"HTTPHeader.add(new com.kms.katalon.core.testobject.TestObjectProperty(Authorization, com.kms.katalon.core.testobject.ConditionType.EQUALS, (Bearer  + token)))",Chrome 91.0.4472.77,Send token in HTTP header,,2021-05-30 03:37:38,2021-05-30 03:37:38,0.016s,PASSED
+"Logout_ScopeToProject = findTestObject(""API/Logout"")",Chrome 91.0.4472.77,Scope to a project,,2021-05-30 03:37:38,2021-05-30 03:37:38,0.089s,PASSED
+Logout_ScopeToProject.setHttpHeaderProperties(HTTPHeader),Chrome 91.0.4472.77,Set that token,,2021-05-30 03:37:38,2021-05-30 03:37:38,0.053s,PASSED
+logoutResponse = sendRequest(Logout_ScopeToProject),Chrome 91.0.4472.77,call logout api,,2021-05-30 03:37:38,2021-05-30 03:37:39,0.066s,PASSED
+"verifyResponseStatusCode(logoutResponse, 200)",Chrome 91.0.4472.77,verify successful logout,,2021-05-30 03:37:39,2021-05-30 03:37:39,0.034s,PASSED
+"ScopeToProject = findTestObject(""API/Get users"")",Chrome 91.0.4472.77,Scope to a project,,2021-05-30 03:37:39,2021-05-30 03:37:39,0.072s,PASSED
+ScopeToProject.setHttpHeaderProperties(HTTPHeader),Chrome 91.0.4472.77,Set that token,,2021-05-30 03:37:39,2021-05-30 03:37:39,0.000s,PASSED
+response = sendRequest(ScopeToProject),Chrome 91.0.4472.77,Get response text,,2021-05-30 03:37:39,2021-05-30 03:37:39,0.057s,PASSED
+"out.println(""Body content: "" + response.getResponseBodyContent())",Chrome 91.0.4472.77,,,2021-05-30 03:37:39,2021-05-30 03:37:39,0.013s,PASSED
+"verifyResponseStatusCode(response, 401)",Chrome 91.0.4472.77,,,2021-05-30 03:37:39,2021-05-30 03:37:39,0.009s,PASSED
+,,,,,,,
+Test Cases/API/API - Verify successful login,Chrome 91.0.4472.77,,,2021-05-30 03:37:39,2021-05-30 03:37:39,0.658s,PASSED
+"response = sendRequest(findTestObject(""API/Login""))",Chrome 91.0.4472.77,,,2021-05-30 03:37:39,2021-05-30 03:37:39,0.188s,PASSED
+"out.println(""Body content: "" + response.getResponseBodyContent())",Chrome 91.0.4472.77,,,2021-05-30 03:37:39,2021-05-30 03:37:39,0.000s,PASSED
+"out.println(""Token: "" + response.getHeaderField(""Token""))",Chrome 91.0.4472.77,,,2021-05-30 03:37:39,2021-05-30 03:37:39,0.000s,PASSED
+"verifyResponseStatusCode(response, 200)",Chrome 91.0.4472.77,,,2021-05-30 03:37:39,2021-05-30 03:37:39,0.000s,PASSED
+"verifyElementPropertyValue(response, ""username"", ""nguyenvana"")",Chrome 91.0.4472.77,,,2021-05-30 03:37:39,2021-05-30 03:37:39,0.140s,PASSED
+,,,,,,,
+Test Cases/API/API - Verify successfuly get a user by email,Chrome 91.0.4472.77,,,2021-05-30 03:37:39,2021-05-30 03:37:40,0.640s,PASSED
+"loginResponse = sendRequest(findTestObject(""API/Login""))",Chrome 91.0.4472.77,Get token,,2021-05-30 03:37:40,2021-05-30 03:37:40,0.172s,PASSED
+"token = loginResponse.getHeaderField(""Token"")",Chrome 91.0.4472.77,,,2021-05-30 03:37:40,2021-05-30 03:37:40,0.000s,PASSED
+"out.println(""Token: "" + token)",Chrome 91.0.4472.77,,,2021-05-30 03:37:40,2021-05-30 03:37:40,0.000s,PASSED
+"ScopeToProject = findTestObject(""API/Get a user by email"")",Chrome 91.0.4472.77,Scope to a project,,2021-05-30 03:37:40,2021-05-30 03:37:40,0.047s,PASSED
+HTTPHeader = new java.util.ArrayList(),Chrome 91.0.4472.77,Create new ArrayList,,2021-05-30 03:37:40,2021-05-30 03:37:40,0.000s,PASSED
+"HTTPHeader.add(new com.kms.katalon.core.testobject.TestObjectProperty(Authorization, com.kms.katalon.core.testobject.ConditionType.EQUALS, (Bearer  + token)))",Chrome 91.0.4472.77,Send token in HTTP header,,2021-05-30 03:37:40,2021-05-30 03:37:40,0.015s,PASSED
+ScopeToProject.setHttpHeaderProperties(HTTPHeader),Chrome 91.0.4472.77,Set that token,,2021-05-30 03:37:40,2021-05-30 03:37:40,0.000s,PASSED
+response = sendRequest(ScopeToProject),Chrome 91.0.4472.77,Get response text,,2021-05-30 03:37:40,2021-05-30 03:37:40,0.063s,PASSED
+"out.println(""Body content: "" + response.getResponseBodyContent())",Chrome 91.0.4472.77,,,2021-05-30 03:37:40,2021-05-30 03:37:40,0.000s,PASSED
+"verifyResponseStatusCode(response, 200)",Chrome 91.0.4472.77,,,2021-05-30 03:37:40,2021-05-30 03:37:40,0.000s,PASSED
+"verifyElementPropertyValue(response, ""email"", ""tttung468@gmail.com"")",Chrome 91.0.4472.77,,,2021-05-30 03:37:40,2021-05-30 03:37:40,0.015s,PASSED
+,,,,,,,
+Test Cases/API/API - Verify successfuly get a user by username,Chrome 91.0.4472.77,,,2021-05-30 03:37:40,2021-05-30 03:37:41,0.714s,PASSED
+"loginResponse = sendRequest(findTestObject(""API/Login""))",Chrome 91.0.4472.77,Get token,,2021-05-30 03:37:41,2021-05-30 03:37:41,0.163s,PASSED
+"token = loginResponse.getHeaderField(""Token"")",Chrome 91.0.4472.77,,,2021-05-30 03:37:41,2021-05-30 03:37:41,0.000s,PASSED
+"out.println(""Token: "" + token)",Chrome 91.0.4472.77,,,2021-05-30 03:37:41,2021-05-30 03:37:41,0.015s,PASSED
+"ScopeToProject = findTestObject(""API/Get a user by username"")",Chrome 91.0.4472.77,Scope to a project,,2021-05-30 03:37:41,2021-05-30 03:37:41,0.047s,PASSED
+HTTPHeader = new java.util.ArrayList(),Chrome 91.0.4472.77,Create new ArrayList,,2021-05-30 03:37:41,2021-05-30 03:37:41,0.000s,PASSED
+"HTTPHeader.add(new com.kms.katalon.core.testobject.TestObjectProperty(Authorization, com.kms.katalon.core.testobject.ConditionType.EQUALS, (Bearer  + token)))",Chrome 91.0.4472.77,Send token in HTTP header,,2021-05-30 03:37:41,2021-05-30 03:37:41,0.000s,PASSED
+ScopeToProject.setHttpHeaderProperties(HTTPHeader),Chrome 91.0.4472.77,Set that token,,2021-05-30 03:37:41,2021-05-30 03:37:41,0.000s,PASSED
+response = sendRequest(ScopeToProject),Chrome 91.0.4472.77,Get response text,,2021-05-30 03:37:41,2021-05-30 03:37:41,0.032s,PASSED
+"out.println(""Body content: "" + response.getResponseBodyContent())",Chrome 91.0.4472.77,,,2021-05-30 03:37:41,2021-05-30 03:37:41,0.000s,PASSED
+"verifyResponseStatusCode(response, 200)",Chrome 91.0.4472.77,,,2021-05-30 03:37:41,2021-05-30 03:37:41,0.000s,PASSED
+"verifyElementPropertyValue(response, ""username"", ""thanhtung"")",Chrome 91.0.4472.77,,,2021-05-30 03:37:41,2021-05-30 03:37:41,0.031s,PASSED
+,,,,,,,
+Test Cases/API/API - Verify successfuly get a user list,Chrome 91.0.4472.77,,,2021-05-30 03:37:41,2021-05-30 03:37:41,0.562s,PASSED
+"loginResponse = sendRequest(findTestObject(""API/Login""))",Chrome 91.0.4472.77,Get token,,2021-05-30 03:37:41,2021-05-30 03:37:41,0.172s,PASSED
+"token = loginResponse.getHeaderField(""Token"")",Chrome 91.0.4472.77,,,2021-05-30 03:37:41,2021-05-30 03:37:41,0.000s,PASSED
+"out.println(""Token: "" + token)",Chrome 91.0.4472.77,,,2021-05-30 03:37:41,2021-05-30 03:37:41,0.000s,PASSED
+"ScopeToProject = findTestObject(""API/Get users"")",Chrome 91.0.4472.77,Scope to a project,,2021-05-30 03:37:41,2021-05-30 03:37:41,0.062s,PASSED
+HTTPHeader = new java.util.ArrayList(),Chrome 91.0.4472.77,Create new ArrayList,,2021-05-30 03:37:41,2021-05-30 03:37:41,0.000s,PASSED
+"HTTPHeader.add(new com.kms.katalon.core.testobject.TestObjectProperty(Authorization, com.kms.katalon.core.testobject.ConditionType.EQUALS, (Bearer  + token)))",Chrome 91.0.4472.77,Send token in HTTP header,,2021-05-30 03:37:41,2021-05-30 03:37:41,0.000s,PASSED
+ScopeToProject.setHttpHeaderProperties(HTTPHeader),Chrome 91.0.4472.77,Set that token,,2021-05-30 03:37:41,2021-05-30 03:37:41,0.000s,PASSED
+response = sendRequest(ScopeToProject),Chrome 91.0.4472.77,Get response text,,2021-05-30 03:37:41,2021-05-30 03:37:41,0.031s,PASSED
+"out.println(""Body content: "" + response.getResponseBodyContent())",Chrome 91.0.4472.77,,,2021-05-30 03:37:41,2021-05-30 03:37:41,0.000s,PASSED
+"verifyResponseStatusCode(response, 200)",Chrome 91.0.4472.77,,,2021-05-30 03:37:41,2021-05-30 03:37:41,0.000s,PASSED
+,,,,,,,
+Test Cases/API/API - Verify successfuly get total count of users in the system,Chrome 91.0.4472.77,,,2021-05-30 03:37:41,2021-05-30 03:37:42,0.640s,PASSED
+"loginResponse = sendRequest(findTestObject(""API/Login""))",Chrome 91.0.4472.77,Get token,,2021-05-30 03:37:42,2021-05-30 03:37:42,0.186s,PASSED
+"token = loginResponse.getHeaderField(""Token"")",Chrome 91.0.4472.77,,,2021-05-30 03:37:42,2021-05-30 03:37:42,0.000s,PASSED
+"out.println(""Token: "" + token)",Chrome 91.0.4472.77,,,2021-05-30 03:37:42,2021-05-30 03:37:42,0.012s,PASSED
+"ScopeToProject = findTestObject(""API/Get total count of users in the system"")",Chrome 91.0.4472.77,Scope to a project,,2021-05-30 03:37:42,2021-05-30 03:37:42,0.075s,PASSED
+HTTPHeader = new java.util.ArrayList(),Chrome 91.0.4472.77,Create new ArrayList,,2021-05-30 03:37:42,2021-05-30 03:37:42,0.000s,PASSED
+"HTTPHeader.add(new com.kms.katalon.core.testobject.TestObjectProperty(Authorization, com.kms.katalon.core.testobject.ConditionType.EQUALS, (Bearer  + token)))",Chrome 91.0.4472.77,Send token in HTTP header,,2021-05-30 03:37:42,2021-05-30 03:37:42,0.000s,PASSED
+ScopeToProject.setHttpHeaderProperties(HTTPHeader),Chrome 91.0.4472.77,Set that token,,2021-05-30 03:37:42,2021-05-30 03:37:42,0.000s,PASSED
+response = sendRequest(ScopeToProject),Chrome 91.0.4472.77,Get response text,,2021-05-30 03:37:42,2021-05-30 03:37:42,0.035s,PASSED
+"out.println(""Body content: "" + response.getResponseBodyContent())",Chrome 91.0.4472.77,,,2021-05-30 03:37:42,2021-05-30 03:37:42,0.000s,PASSED
+"verifyResponseStatusCode(response, 200)",Chrome 91.0.4472.77,,,2021-05-30 03:37:42,2021-05-30 03:37:42,0.000s,PASSED
+"containsString(response, ""total_users_count"", false)",Chrome 91.0.4472.77,,,2021-05-30 03:37:42,2021-05-30 03:37:42,0.016s,PASSED
+,,,,,,,
+Test Cases/API/API - Verify successfuly get users by ids,Chrome 91.0.4472.77,,,2021-05-30 03:37:42,2021-05-30 03:37:43,0.657s,PASSED
+"loginResponse = sendRequest(findTestObject(""API/Login""))",Chrome 91.0.4472.77,Get token,,2021-05-30 03:37:42,2021-05-30 03:37:43,0.172s,PASSED
+"token = loginResponse.getHeaderField(""Token"")",Chrome 91.0.4472.77,,,2021-05-30 03:37:43,2021-05-30 03:37:43,0.000s,PASSED
+"out.println(""Token: "" + token)",Chrome 91.0.4472.77,,,2021-05-30 03:37:43,2021-05-30 03:37:43,0.000s,PASSED
+"ScopeToProject = findTestObject(""API/Get users by ids"")",Chrome 91.0.4472.77,Scope to a project,,2021-05-30 03:37:43,2021-05-30 03:37:43,0.047s,PASSED
+HTTPHeader = new java.util.ArrayList(),Chrome 91.0.4472.77,Create new ArrayList,,2021-05-30 03:37:43,2021-05-30 03:37:43,0.016s,PASSED
+"HTTPHeader.add(new com.kms.katalon.core.testobject.TestObjectProperty(Authorization, com.kms.katalon.core.testobject.ConditionType.EQUALS, (Bearer  + token)))",Chrome 91.0.4472.77,Send token in HTTP header,,2021-05-30 03:37:43,2021-05-30 03:37:43,0.000s,PASSED
+ScopeToProject.setHttpHeaderProperties(HTTPHeader),Chrome 91.0.4472.77,Set that token,,2021-05-30 03:37:43,2021-05-30 03:37:43,0.000s,PASSED
+response = sendRequest(ScopeToProject),Chrome 91.0.4472.77,Get response text,,2021-05-30 03:37:43,2021-05-30 03:37:43,0.031s,PASSED
+"out.println(""Body content: "" + response.getResponseBodyContent())",Chrome 91.0.4472.77,,,2021-05-30 03:37:43,2021-05-30 03:37:43,0.000s,PASSED
+"verifyResponseStatusCode(response, 200)",Chrome 91.0.4472.77,,,2021-05-30 03:37:43,2021-05-30 03:37:43,0.000s,PASSED
+"verifyElementPropertyValue(response, ""[0].id"", ""dttuo8b67bno3j4s9acuspapra"")",Chrome 91.0.4472.77,,,2021-05-30 03:37:43,2021-05-30 03:37:43,0.016s,PASSED
+"verifyElementPropertyValue(response, ""[0].username"", ""nguyenvana"")",Chrome 91.0.4472.77,,,2021-05-30 03:37:43,2021-05-30 03:37:43,0.015s,PASSED
+"verifyElementPropertyValue(response, ""[1].id"", ""ifcc1quidtbbxnd3id16f1uywa"")",Chrome 91.0.4472.77,,,2021-05-30 03:37:43,2021-05-30 03:37:43,0.016s,PASSED
+"verifyElementPropertyValue(response, ""[1].username"", ""thanhtung"")",Chrome 91.0.4472.77,,,2021-05-30 03:37:43,2021-05-30 03:37:43,0.016s,PASSED
+,,,,,,,
+Test Cases/API/API - Verify successfuly get users by usernames,Chrome 91.0.4472.77,,,2021-05-30 03:37:43,2021-05-30 03:37:44,0.852s,PASSED
+"loginResponse = sendRequest(findTestObject(""API/Login""))",Chrome 91.0.4472.77,Get token,,2021-05-30 03:37:43,2021-05-30 03:37:43,0.181s,PASSED
+"token = loginResponse.getHeaderField(""Token"")",Chrome 91.0.4472.77,,,2021-05-30 03:37:43,2021-05-30 03:37:43,0.000s,PASSED
+"out.println(""Token: "" + token)",Chrome 91.0.4472.77,,,2021-05-30 03:37:43,2021-05-30 03:37:43,0.000s,PASSED
+"ScopeToProject = findTestObject(""API/Get users by usernames"")",Chrome 91.0.4472.77,Scope to a project,,2021-05-30 03:37:43,2021-05-30 03:37:43,0.229s,PASSED
+HTTPHeader = new java.util.ArrayList(),Chrome 91.0.4472.77,Create new ArrayList,,2021-05-30 03:37:43,2021-05-30 03:37:43,0.000s,PASSED
+"HTTPHeader.add(new com.kms.katalon.core.testobject.TestObjectProperty(Authorization, com.kms.katalon.core.testobject.ConditionType.EQUALS, (Bearer  + token)))",Chrome 91.0.4472.77,Send token in HTTP header,,2021-05-30 03:37:43,2021-05-30 03:37:43,0.000s,PASSED
+ScopeToProject.setHttpHeaderProperties(HTTPHeader),Chrome 91.0.4472.77,Set that token,,2021-05-30 03:37:43,2021-05-30 03:37:43,0.000s,PASSED
+response = sendRequest(ScopeToProject),Chrome 91.0.4472.77,Get response text,,2021-05-30 03:37:43,2021-05-30 03:37:43,0.075s,PASSED
+"out.println(""Body content: "" + response.getResponseBodyContent())",Chrome 91.0.4472.77,,,2021-05-30 03:37:43,2021-05-30 03:37:43,0.000s,PASSED
+"verifyResponseStatusCode(response, 200)",Chrome 91.0.4472.77,,,2021-05-30 03:37:43,2021-05-30 03:37:43,0.000s,PASSED
+"verifyElementPropertyValue(response, ""[0].username"", ""nguyenvana"")",Chrome 91.0.4472.77,,,2021-05-30 03:37:43,2021-05-30 03:37:44,0.045s,PASSED
+"verifyElementPropertyValue(response, ""[1].username"", ""thanhtung"")",Chrome 91.0.4472.77,,,2021-05-30 03:37:44,2021-05-30 03:37:44,0.016s,PASSED
+,,,,,,,
+Test Cases/Login/Verify login failed with empty password,Chrome 91.0.4472.77,,,2021-05-30 03:37:44,2021-05-30 03:37:51,7.405s,PASSED
+"callTestCase(findTestCase(""Common Test Cases/Login""), [""Username"":findTestData(""Internal Data for Login"").getValue(1, 2), ""Password"":findTestData(""Internal Data for Login"").getValue(2, 2)], STOP_ON_FAILURE)",Chrome 91.0.4472.77,,,2021-05-30 03:37:44,2021-05-30 03:37:50,6.031s,PASSED
+"verifyElementPresent(findTestObject(""Page_Mattermost/label_Please enter your password""), 0)",Chrome 91.0.4472.77,,,2021-05-30 03:37:50,2021-05-30 03:37:50,0.447s,PASSED
+closeBrowser(),Chrome 91.0.4472.77,,,2021-05-30 03:37:50,2021-05-30 03:37:51,0.676s,PASSED
+,,,,,,,
+Test Cases/Login/Verify login failed with empty username,Chrome 91.0.4472.77,,,2021-05-30 03:37:51,2021-05-30 03:37:57,5.846s,PASSED
+"callTestCase(findTestCase(""Common Test Cases/Login""), [""Username"":findTestData(""Internal Data for Login"").getValue(1, 1), ""Password"":findTestData(""Internal Data for Login"").getValue(2, 1)], STOP_ON_FAILURE)",Chrome 91.0.4472.77,,,2021-05-30 03:37:51,2021-05-30 03:37:56,4.533s,PASSED
+"verifyElementPresent(findTestObject(""Page_Mattermost/label_Please enter your email or username""), 0)",Chrome 91.0.4472.77,,,2021-05-30 03:37:56,2021-05-30 03:37:56,0.402s,PASSED
+closeBrowser(),Chrome 91.0.4472.77,,,2021-05-30 03:37:56,2021-05-30 03:37:57,0.639s,PASSED
+,,,,,,,
+Test Cases/Login/Verify login failed with invalid password,Chrome 91.0.4472.77,,,2021-05-30 03:37:57,2021-05-30 03:38:03,6.128s,PASSED
+"callTestCase(findTestCase(""Common Test Cases/Login""), [""Username"":findTestData(""Internal Data for Login"").getValue(1, 4), ""Password"":findTestData(""Internal Data for Login"").getValue(2, 4)], STOP_ON_FAILURE)",Chrome 91.0.4472.77,,,2021-05-30 03:37:57,2021-05-30 03:38:02,4.651s,PASSED
+"verifyElementPresent(findTestObject(""Page_Mattermost/label_Enter a valid email or username andor password""), 0)",Chrome 91.0.4472.77,,,2021-05-30 03:38:02,2021-05-30 03:38:02,0.506s,PASSED
+closeBrowser(),Chrome 91.0.4472.77,,,2021-05-30 03:38:02,2021-05-30 03:38:03,0.683s,PASSED
+,,,,,,,
+Test Cases/Login/Verify login failed with invalid username,Chrome 91.0.4472.77,,,2021-05-30 03:38:03,2021-05-30 03:38:09,6.027s,PASSED
+"callTestCase(findTestCase(""Common Test Cases/Login""), [""Username"":findTestData(""Internal Data for Login"").getValue(1, 3), ""Password"":findTestData(""Internal Data for Login"").getValue(2, 3)], STOP_ON_FAILURE)",Chrome 91.0.4472.77,,,2021-05-30 03:38:03,2021-05-30 03:38:08,4.662s,PASSED
+"verifyElementPresent(findTestObject(""Page_Mattermost/label_Enter a valid email or username andor password""), 0)",Chrome 91.0.4472.77,,,2021-05-30 03:38:08,2021-05-30 03:38:08,0.403s,PASSED
+closeBrowser(),Chrome 91.0.4472.77,,,2021-05-30 03:38:08,2021-05-30 03:38:09,0.677s,PASSED
+,,,,,,,
+Test Cases/Login/Verify successful login,Chrome 91.0.4472.77,,,2021-05-30 03:38:09,2021-05-30 03:38:17,8.097s,PASSED
+"callTestCase(findTestCase(""Common Test Cases/Login""), [""Username"":findTestData(""Internal Data for Login"").getValue(1, 5), ""Password"":findTestData(""Internal Data for Login"").getValue(2, 5)], STOP_ON_FAILURE)",Chrome 91.0.4472.77,,,2021-05-30 03:38:09,2021-05-30 03:38:14,4.741s,PASSED
+"verifyElementPresent(findTestObject(""Page_Town Square - TEAM NAME Mattermost/div_CHANNELS""), 0)",Chrome 91.0.4472.77,,,2021-05-30 03:38:14,2021-05-30 03:38:16,1.749s,PASSED
+"verifyElementPresent(findTestObject(""Page_Town Square - TEAM NAME Mattermost/div_DIRECT MESSAGES""), 0)",Chrome 91.0.4472.77,,,2021-05-30 03:38:16,2021-05-30 03:38:16,0.616s,PASSED
+closeBrowser(),Chrome 91.0.4472.77,,,2021-05-30 03:38:16,2021-05-30 03:38:17,0.663s,PASSED
+,,,,,,,
+Test Cases/SwitchCaseTest/ChangeLanguge,Chrome 91.0.4472.77,,,2021-05-30 03:38:17,2021-05-30 03:38:27,10.240s,PASSED
+"callTestCase(findTestCase(""Test Cases/Common Test Cases/Login""), [""username"":username, ""password"":password], STOP_ON_FAILURE)",Chrome 91.0.4472.77,,,2021-05-30 03:38:18,2021-05-30 03:38:22,4.780s,PASSED
+"click(findTestObject(""Object Repository/IFObject/Page_TEST CHANNEL - TEAM NAME Mattermost/button_cxtuan_style--none sidebar-header-dropdown__icon""))",Chrome 91.0.4472.77,,,2021-05-30 03:38:22,2021-05-30 03:38:24,1.865s,PASSED
+"click(findTestObject(""Object Repository/IFObject/Page_TEST CHANNEL - TEAM NAME Mattermost/button_Account Settings""))",Chrome 91.0.4472.77,,,2021-05-30 03:38:24,2021-05-30 03:38:25,0.576s,PASSED
+lang = language,Chrome 91.0.4472.77,,,2021-05-30 03:38:25,2021-05-30 03:38:25,0.001s,PASSED
+"click(findTestObject(""Object Repository/SwitchCase/Change language/button_Display""))",Chrome 91.0.4472.77,,,2021-05-30 03:38:25,2021-05-30 03:38:25,0.574s,PASSED
+"click(findTestObject(""Object Repository/SwitchCase/Change language/button_EditLanguage""))",Chrome 91.0.4472.77,,,2021-05-30 03:38:25,2021-05-30 03:38:26,0.606s,PASSED
+"click(findTestObject(""Object Repository/SwitchCase/Change language/div_English""))",Chrome 91.0.4472.77,,,2021-05-30 03:38:26,2021-05-30 03:38:26,0.471s,PASSED
+switch (lang),Chrome 91.0.4472.77,,,2021-05-30 03:38:26,2021-05-30 03:38:27,0.447s,PASSED
+"click(findTestObject(""Object Repository/SwitchCase/Change language/button_Save""))",Chrome 91.0.4472.77,,,2021-05-30 03:38:27,2021-05-30 03:38:27,0.558s,PASSED
+,,,,,,,
+Test Cases/SwitchCaseTest/CallChangeDefaultLanguage,Chrome 91.0.4472.77,,,2021-05-30 03:38:27,2021-05-30 03:38:38,10.672s,PASSED
+"callTestCase(findTestCase(""SwitchCaseTest/ChangeLanguge""), [""username"":""cxtuan"", ""password"":""01672471821nT@"", ""language"":""English""], STOP_ON_FAILURE)",Chrome 91.0.4472.77,,,2021-05-30 03:38:28,2021-05-30 03:38:38,10.356s,PASSED
+,,,,,,,
+Test Cases/SwitchCaseTest/ChangeNotificationEmail,Chrome 91.0.4472.77,,,2021-05-30 03:38:38,2021-05-30 03:38:50,11.660s,PASSED
+"openBrowser("""")",Chrome 91.0.4472.77,,,2021-05-30 03:38:38,2021-05-30 03:38:40,1.868s,PASSED
+"callTestCase(findTestCase(""Test Cases/Common Test Cases/Login""), [""username"":username, ""password"":password], STOP_ON_FAILURE)",Chrome 91.0.4472.77,,,2021-05-30 03:38:40,2021-05-30 03:38:46,5.273s,PASSED
+"click(findTestObject(""Object Repository/SwitchCase/NotifyEmail/Page_span_Town Square - TEAM NAME Mattermost/span""))",Chrome 91.0.4472.77,,,2021-05-30 03:38:46,2021-05-30 03:38:47,1.569s,PASSED
+"click(findTestObject(""Object Repository/SwitchCase/NotifyEmail/Page_span_Town Square - TEAM NAME Mattermost/button_Account Settings""))",Chrome 91.0.4472.77,,,2021-05-30 03:38:47,2021-05-30 03:38:48,0.581s,PASSED
+"click(findTestObject(""Object Repository/SwitchCase/NotifyEmail/Page_span_Town Square - TEAM NAME Mattermost/button_Notifications""))",Chrome 91.0.4472.77,,,2021-05-30 03:38:48,2021-05-30 03:38:48,0.552s,PASSED
+"click(findTestObject(""Object Repository/SwitchCase/NotifyEmail/Page_span_Town Square - TEAM NAME Mattermost/div_Email NotificationsEditImmediately""))",Chrome 91.0.4472.77,,,2021-05-30 03:38:48,2021-05-30 03:38:49,0.545s,PASSED
+notify = notify,Chrome 91.0.4472.77,,,2021-05-30 03:38:49,2021-05-30 03:38:49,0.000s,PASSED
+switch (notify),Chrome 91.0.4472.77,,,2021-05-30 03:38:49,2021-05-30 03:38:49,0.551s,PASSED
+"click(findTestObject(""Object Repository/SwitchCase/NotifyEmail/Page_span_Town Square - TEAM NAME Mattermost/span_Save""))",Chrome 91.0.4472.77,,,2021-05-30 03:38:49,2021-05-30 03:38:50,0.365s,PASSED
+,,,,,,,
+Test Cases/SwitchCaseTest/CallChangeDefaultNotificationEmail,Chrome 91.0.4472.77,,,2021-05-30 03:38:50,2021-05-30 03:39:02,11.747s,PASSED
+"callTestCase(findTestCase(""SwitchCaseTest/ChangeNotificationEmail""), [""username"":""cxtuan"", ""password"":""01672471821nT@"", ""notify"":""yes""], STOP_ON_FAILURE)",Chrome 91.0.4472.77,,,2021-05-30 03:38:50,2021-05-30 03:39:02,11.461s,PASSED
+,,,,,,,
+Test Cases/SwitchCaseTest/NumberOfDirectMessages,Chrome 91.0.4472.77,,,2021-05-30 03:39:02,2021-05-30 03:39:13,11.244s,PASSED
+"callTestCase(findTestCase(""Common Test Cases/Login""), [""Username"":""nttuan"", ""Password"":""12345678zZ@""], STOP_ON_FAILURE)",Chrome 91.0.4472.77,,,2021-05-30 03:39:02,2021-05-30 03:39:07,5.181s,PASSED
+"click(findTestObject(""Object Repository/SwitchCase/NumberOfDirectMessages/Page_span_Town Square - TEAM NAME Mattermost/button_nttuan_style--none sidebar-header-dr_897f13""))",Chrome 91.0.4472.77,,,2021-05-30 03:39:07,2021-05-30 03:39:09,1.759s,PASSED
+"click(findTestObject(""Object Repository/SwitchCase/NumberOfDirectMessages/Page_span_Town Square - TEAM NAME Mattermost/span_Account Settings""))",Chrome 91.0.4472.77,,,2021-05-30 03:39:09,2021-05-30 03:39:09,0.571s,PASSED
+"click(findTestObject(""Object Repository/SwitchCase/NumberOfDirectMessages/Page_span_Town Square - TEAM NAME Mattermost/button_Sidebar""))",Chrome 91.0.4472.77,,,2021-05-30 03:39:09,2021-05-30 03:39:10,0.544s,PASSED
+"click(findTestObject(""Object Repository/SwitchCase/NumberOfDirectMessages/Page_span_Town Square - TEAM NAME Mattermost/span_Edit""))",Chrome 91.0.4472.77,,,2021-05-30 03:39:10,2021-05-30 03:39:10,0.559s,PASSED
+"click(findTestObject(""SwitchCase/NumberOfDirectMessages/Page_span_Town Square - TEAM NAME Mattermost/div_All Direct Messages_css-1thkkgx""))",Chrome 91.0.4472.77,,,2021-05-30 03:39:10,2021-05-30 03:39:11,0.551s,PASSED
+switch (nMessage),Chrome 91.0.4472.77,,,2021-05-30 03:39:11,2021-05-30 03:39:12,0.545s,PASSED
+"click(findTestObject(""Object Repository/SwitchCase/NumberOfDirectMessages/Page_span_Town Square - TEAM NAME Mattermost/button_Save""))",Chrome 91.0.4472.77,,,2021-05-30 03:39:12,2021-05-30 03:39:12,0.556s,PASSED
+closeBrowser(),Chrome 91.0.4472.77,,,2021-05-30 03:39:12,2021-05-30 03:39:13,0.679s,PASSED
+,,,,,,,
+Test Cases/SwitchCaseTest/CallChangeDefaultNumberOfDirectMessage,Chrome 91.0.4472.77,,,2021-05-30 03:39:13,2021-05-30 03:39:23,10.448s,PASSED
+"callTestCase(findTestCase(""SwitchCaseTest/NumberOfDirectMessages""), [""nMessage"":1000], STOP_ON_FAILURE)",Chrome 91.0.4472.77,,,2021-05-30 03:39:13,2021-05-30 03:39:23,10.166s,PASSED
+,,,,,,,
+Test Cases/SwitchCaseTest/ReplyNotification,Chrome 91.0.4472.77,,,2021-05-30 03:39:23,2021-05-30 03:39:33,9.649s,PASSED
+"callTestCase(findTestCase(""Common Test Cases/Login""), [""Username"":""nttuan"", ""Password"":""12345678zZ@""], STOP_ON_FAILURE)",Chrome 91.0.4472.77,,,2021-05-30 03:39:24,2021-05-30 03:39:28,4.644s,PASSED
+"click(findTestObject(""Object Repository/SwitchCase/RelyNotification/Page_span_Town Square - TEAM NAME Mattermost/svg""))",Chrome 91.0.4472.77,,,2021-05-30 03:39:28,2021-05-30 03:39:30,1.535s,PASSED
+"click(findTestObject(""Object Repository/SwitchCase/RelyNotification/Page_span_Town Square - TEAM NAME Mattermost/button_Account Settings""))",Chrome 91.0.4472.77,,,2021-05-30 03:39:30,2021-05-30 03:39:30,0.561s,PASSED
+"click(findTestObject(""Object Repository/SwitchCase/RelyNotification/Page_span_Town Square - TEAM NAME Mattermost/button_Notifications""))",Chrome 91.0.4472.77,,,2021-05-30 03:39:30,2021-05-30 03:39:31,0.550s,PASSED
+"click(findTestObject(""Object Repository/SwitchCase/RelyNotification/Page_span_Town Square - TEAM NAME Mattermost/span_Edit""))",Chrome 91.0.4472.77,,,2021-05-30 03:39:31,2021-05-30 03:39:31,0.537s,PASSED
+switch (replyNotificationType),Chrome 91.0.4472.77,,,2021-05-30 03:39:31,2021-05-30 03:39:32,0.528s,PASSED
+"click(findTestObject(""Object Repository/SwitchCase/RelyNotification/Page_span_Town Square - TEAM NAME Mattermost/button_Save""))",Chrome 91.0.4472.77,,,2021-05-30 03:39:32,2021-05-30 03:39:32,0.344s,PASSED
+closeBrowser(),Chrome 91.0.4472.77,,,2021-05-30 03:39:32,2021-05-30 03:39:33,0.647s,PASSED
+,,,,,,,
+Test Cases/SwitchCaseTest/TeammateNameDisplay,Chrome 91.0.4472.77,,,2021-05-30 03:39:33,2021-05-30 03:39:44,10.859s,PASSED
+"openBrowser("""")",Chrome 91.0.4472.77,,,2021-05-30 03:39:33,2021-05-30 03:39:34,1.201s,PASSED
+"callTestCase(findTestCase(""Test Cases/Common Test Cases/Login""), [""username"":username, ""password"":password], STOP_ON_FAILURE)",Chrome 91.0.4472.77,,,2021-05-30 03:39:34,2021-05-30 03:39:40,5.199s,PASSED
+"click(findTestObject(""Object Repository/SwitchCase/NotifyEmail/Page_span_Town Square - TEAM NAME Mattermost/span""))",Chrome 91.0.4472.77,,,2021-05-30 03:39:40,2021-05-30 03:39:41,1.555s,PASSED
+"click(findTestObject(""Object Repository/SwitchCase/NotifyEmail/Page_span_Town Square - TEAM NAME Mattermost/button_Account Settings""))",Chrome 91.0.4472.77,,,2021-05-30 03:39:41,2021-05-30 03:39:42,0.560s,PASSED
+"click(findTestObject(""Object Repository/SwitchCase/TeamMateName/button_Display""))",Chrome 91.0.4472.77,,,2021-05-30 03:39:42,2021-05-30 03:39:42,0.582s,PASSED
+"click(findTestObject(""Object Repository/SwitchCase/TeamMateName/div_Teammate Name DisplayEditShow username""))",Chrome 91.0.4472.77,,,2021-05-30 03:39:42,2021-05-30 03:39:43,0.548s,PASSED
+show = show,Chrome 91.0.4472.77,,,2021-05-30 03:39:43,2021-05-30 03:39:43,0.000s,PASSED
+switch (show),Chrome 91.0.4472.77,,,2021-05-30 03:39:43,2021-05-30 03:39:43,0.543s,PASSED
+"click(findTestObject(""Object Repository/SwitchCase/TeamMateName/button_Save""))",Chrome 91.0.4472.77,,,2021-05-30 03:39:43,2021-05-30 03:39:44,0.353s,PASSED
+,,,,,,,
+Test Cases/Loop/Add members to channel,Chrome 91.0.4472.77,,,2021-05-30 03:39:44,2021-05-30 03:42:08,2m - 24.666s,PASSED
+"callTestCase(findTestCase(""Common Test Cases/Login""), [""Username"":""nttuan"", ""Password"":""12345678zZ@""], STOP_ON_FAILURE)",Chrome 91.0.4472.77,,,2021-05-30 03:39:44,2021-05-30 03:39:49,5.214s,PASSED
+"click(findTestObject(""ChanelMember/Page_Channel to test add  remove members - TEAM NAME Mattermost/span_Channel to test add  remove members""))",Chrome 91.0.4472.77,,,2021-05-30 03:39:49,2021-05-30 03:39:51,1.538s,PASSED
+"usernames = Arrays.asList(""cxtuan"", ""nguyenvana"", ""nguyenvanb"")",Chrome 91.0.4472.77,,,2021-05-30 03:39:51,2021-05-30 03:39:51,0.008s,PASSED
+"for ([i = 0, i < usernames.size(), (i++)])",Chrome 91.0.4472.77,,,2021-05-30 03:39:51,2021-05-30 03:42:08,2m - 16.888s,FAILED
+closeBrowser(),Chrome 91.0.4472.77,,,2021-05-30 03:42:08,2021-05-30 03:42:08,0.718s,PASSED
+,,,,,,,
+Test Cases/Loop/Search messages,Chrome 91.0.4472.77,,,2021-05-30 03:42:08,2021-05-30 03:42:26,17.603s,PASSED
+"callTestCase(findTestCase(""Common Test Cases/Login""), [""Username"":""nttuan"", ""Password"":""12345678zZ@""], STOP_ON_FAILURE)",Chrome 91.0.4472.77,,,2021-05-30 03:42:09,2021-05-30 03:42:13,4.589s,PASSED
+"click(findTestObject(""Object Repository/SearchMessage/Page_TEST CHANNEL - TEAM NAME Mattermost/span_TEST CHANNEL""))",Chrome 91.0.4472.77,,,2021-05-30 03:42:13,2021-05-30 03:42:15,1.478s,PASSED
+"click(findTestObject(""Object Repository/SearchMessage/Page_TEST CHANNEL - TEAM NAME Mattermost/span_TEST CHANNEL_icon icon--standard""))",Chrome 91.0.4472.77,,,2021-05-30 03:42:15,2021-05-30 03:42:15,0.696s,PASSED
+"internalSearchMessages = findTestData(""Internal/Internal Search Messages"")",Chrome 91.0.4472.77,,,2021-05-30 03:42:15,2021-05-30 03:42:15,0.011s,PASSED
+nMessages = internalSearchMessages.getRowNumbers(),Chrome 91.0.4472.77,,,2021-05-30 03:42:15,2021-05-30 03:42:15,0.001s,PASSED
+"for ([i = 1, i <= nMessages, (i++)])",Chrome 91.0.4472.77,,,2021-05-30 03:42:15,2021-05-30 03:42:25,9.854s,PASSED
+closeBrowser(),Chrome 91.0.4472.77,,,2021-05-30 03:42:25,2021-05-30 03:42:26,0.689s,PASSED
+,,,,,,,
+Test Cases/Loop/Send direct messages,Chrome 91.0.4472.77,,,2021-05-30 03:42:26,2021-05-30 03:42:48,21.795s,PASSED
+"callTestCase(findTestCase(""Common Test Cases/Login""), [""Username"":""nttuan"", ""Password"":""12345678zZ@""], STOP_ON_FAILURE)",Chrome 91.0.4472.77,,,2021-05-30 03:42:26,2021-05-30 03:42:31,4.646s,PASSED
+"click(findTestObject(""Object Repository/Direct Message/Page_TEST CHANNEL - TEAM NAME Mattermost/i_DIRECT MESSAGES_icon-plus""))",Chrome 91.0.4472.77,,,2021-05-30 03:42:31,2021-05-30 03:42:33,1.552s,PASSED
+"setText(findTestObject(""Object Repository/Direct Message/Page_TEST CHANNEL - TEAM NAME Mattermost/input_Search for people_react-select-2-input""), username)",Chrome 91.0.4472.77,,,2021-05-30 03:42:33,2021-05-30 03:42:34,1.156s,PASSED
+"sendKeys(findTestObject(""Object Repository/Direct Message/Page_TEST CHANNEL - TEAM NAME Mattermost/input_Search for people_react-select-2-input""), Keys.chord(ENTER))",Chrome 91.0.4472.77,,,2021-05-30 03:42:34,2021-05-30 03:42:35,0.920s,PASSED
+"click(findTestObject(""Object Repository/Direct Message/Page_TEST CHANNEL - TEAM NAME Mattermost/button_Go""))",Chrome 91.0.4472.77,,,2021-05-30 03:42:35,2021-05-30 03:42:35,0.761s,PASSED
+"message = String.format(""This test will sent %d direct messages using while loop"", nMessage)",Chrome 91.0.4472.77,,,2021-05-30 03:42:35,2021-05-30 03:42:35,0.000s,PASSED
+"format = DateTimeFormatter.ofPattern(""dd-MM-yyyy HH:mm:ss"")",Chrome 91.0.4472.77,,,2021-05-30 03:42:35,2021-05-30 03:42:35,0.017s,PASSED
+"setText(findTestObject(""Object Repository/Direct Message/Page_nguyenvanb - TEAM NAME Mattermost/textarea_Write to nguyenvanb_post_textbox""), message)",Chrome 91.0.4472.77,,,2021-05-30 03:42:35,2021-05-30 03:42:37,1.509s,PASSED
+"sendKeys(findTestObject(""Object Repository/Direct Message/Page_nguyenvanb - TEAM NAME Mattermost/textarea_Write to nguyenvanb_post_textbox""), Keys.chord(ENTER))",Chrome 91.0.4472.77,,,2021-05-30 03:42:37,2021-05-30 03:42:38,0.674s,PASSED
+while (nMessage > 0),Chrome 91.0.4472.77,,,2021-05-30 03:42:38,2021-05-30 03:42:47,9.557s,PASSED
+closeBrowser(),Chrome 91.0.4472.77,,,2021-05-30 03:42:47,2021-05-30 03:42:48,0.687s,PASSED
+,,,,,,,
+Test Cases/Loop/Send messages to private channel,Chrome 91.0.4472.77,,,2021-05-30 03:42:48,2021-05-30 03:43:07,18.786s,PASSED
+"callTestCase(findTestCase(""Common Test Cases/Login""), [""Username"":""nttuan"", ""Password"":""12345678zZ@""], STOP_ON_FAILURE)",Chrome 91.0.4472.77,,,2021-05-30 03:42:48,2021-05-30 03:42:53,4.622s,PASSED
+"click(findTestObject(""Object Repository/Private Channel/Page_TEST CHANNEL - TEAM NAME Mattermost/span_private channel""))",Chrome 91.0.4472.77,,,2021-05-30 03:42:53,2021-05-30 03:42:54,1.527s,PASSED
+"message = String.format(""This test will sent %d messages using while loop"", nMessage)",Chrome 91.0.4472.77,,,2021-05-30 03:42:54,2021-05-30 03:42:54,0.001s,PASSED
+"format = DateTimeFormatter.ofPattern(""dd-MM-yyyy HH:mm:ss"")",Chrome 91.0.4472.77,,,2021-05-30 03:42:54,2021-05-30 03:42:54,0.001s,PASSED
+"setText(findTestObject(""Object Repository/Private Channel/Page_private channel - TEAM NAME Mattermost/textarea_Write to private channel_post_textbox""), message)",Chrome 91.0.4472.77,,,2021-05-30 03:42:54,2021-05-30 03:42:56,1.170s,PASSED
+"sendKeys(findTestObject(""Object Repository/Private Channel/Page_private channel - TEAM NAME Mattermost/textarea_Write to private channel_post_textbox""), Keys.chord(ENTER))",Chrome 91.0.4472.77,,,2021-05-30 03:42:56,2021-05-30 03:42:56,0.581s,PASSED
+while (nMessage > 0),Chrome 91.0.4472.77,,,2021-05-30 03:42:56,2021-05-30 03:43:06,9.895s,PASSED
+closeBrowser(),Chrome 91.0.4472.77,,,2021-05-30 03:43:06,2021-05-30 03:43:07,0.655s,PASSED
+,,,,,,,
+Test Cases/Loop/Send messages to public channel,Chrome 91.0.4472.77,,,2021-05-30 03:43:07,2021-05-30 03:43:21,14.620s,PASSED
+"callTestCase(findTestCase(""Common Test Cases/Login""), [""Username"":""nttuan"", ""Password"":""12345678zZ@""], STOP_ON_FAILURE)",Chrome 91.0.4472.77,,,2021-05-30 03:43:07,2021-05-30 03:43:12,4.601s,PASSED
+"click(findTestObject(""Page_TEST CHANNEL - TEAM NAME Mattermost/Page_TEST CHANNEL - TEAM NAME Mattermost/a_TEST CHANNEL""))",Chrome 91.0.4472.77,,,2021-05-30 03:43:12,2021-05-30 03:43:13,1.548s,PASSED
+"message = String.format(""This test will sent %d messages using while loop"", nMessage)",Chrome 91.0.4472.77,,,2021-05-30 03:43:13,2021-05-30 03:43:13,0.000s,PASSED
+"format = DateTimeFormatter.ofPattern(""dd-MM-yyyy HH:mm:ss"")",Chrome 91.0.4472.77,,,2021-05-30 03:43:13,2021-05-30 03:43:13,0.001s,PASSED
+"setText(findTestObject(""Page_TEST CHANNEL - TEAM NAME Mattermost/textarea_Write to TEST CHANNEL_post_textbox""), message)",Chrome 91.0.4472.77,,,2021-05-30 03:43:13,2021-05-30 03:43:14,0.973s,PASSED
+"sendKeys(findTestObject(""Page_TEST CHANNEL - TEAM NAME Mattermost/textarea_Write to TEST CHANNEL_post_textbox""), Keys.chord(ENTER))",Chrome 91.0.4472.77,,,2021-05-30 03:43:14,2021-05-30 03:43:15,0.666s,PASSED
+while (nMessage > 0),Chrome 91.0.4472.77,,,2021-05-30 03:43:15,2021-05-30 03:43:21,5.791s,PASSED
+closeBrowser(),Chrome 91.0.4472.77,,,2021-05-30 03:43:21,2021-05-30 03:43:21,0.711s,PASSED
+,,,,,,,
+Test Cases/Internal Test Cases/CreateCategory,Chrome 91.0.4472.77,,,2021-05-30 03:43:21,2021-05-30 03:43:42,20.579s,PASSED
+"callTestCase(findTestCase(""Internal Test Cases/Successful Login""), [""Username"":"""", ""Password"":""""], STOP_ON_FAILURE)",Chrome 91.0.4472.77,,,2021-05-30 03:43:22,2021-05-30 03:43:26,4.703s,PASSED
+"for ([rowNum = 1, rowNum <= findTestData(""Internal/Internal Category"").getRowNumbers(), (rowNum++)])",Chrome 91.0.4472.77,,,2021-05-30 03:43:26,2021-05-30 03:43:41,14.895s,PASSED
+closeBrowser(),Chrome 91.0.4472.77,,,2021-05-30 03:43:41,2021-05-30 03:43:42,0.666s,PASSED
+,,,,,,,
+Test Cases/Internal Test Cases/CreateChannelPrivate,Chrome 91.0.4472.77,,,2021-05-30 03:43:42,2021-05-30 03:44:04,22.127s,PASSED
+"callTestCase(findTestCase(""Internal Test Cases/Successful Login""), [""Username"":"""", ""Password"":""""], STOP_ON_FAILURE)",Chrome 91.0.4472.77,,,2021-05-30 03:43:42,2021-05-30 03:43:47,4.344s,PASSED
+"for ([rowNum = 1, rowNum <= findTestData(""Internal/Internal Channel Private"").getRowNumbers(), (rowNum++)])",Chrome 91.0.4472.77,,,2021-05-30 03:43:47,2021-05-30 03:44:03,16.850s,PASSED
+closeBrowser(),Chrome 91.0.4472.77,,,2021-05-30 03:44:03,2021-05-30 03:44:04,0.649s,PASSED
+,,,,,,,
+Test Cases/Internal Test Cases/CreateChannelPublic,Chrome 91.0.4472.77,,,2021-05-30 03:44:04,2021-05-30 03:44:26,22.483s,PASSED
+"callTestCase(findTestCase(""Internal Test Cases/Successful Login""), [""Username"":"""", ""Password"":""""], STOP_ON_FAILURE)",Chrome 91.0.4472.77,,,2021-05-30 03:44:04,2021-05-30 03:44:09,4.385s,PASSED
+"for ([rowNum = 1, rowNum <= findTestData(""Internal/Internal Channel Public"").getRowNumbers(), (rowNum++)])",Chrome 91.0.4472.77,,,2021-05-30 03:44:09,2021-05-30 03:44:26,17.114s,PASSED
+closeBrowser(),Chrome 91.0.4472.77,,,2021-05-30 03:44:26,2021-05-30 03:44:26,0.688s,PASSED
+,,,,,,,
+Test Cases/Internal Test Cases/CreateTeam,Chrome 91.0.4472.77,,,2021-05-30 03:44:26,2021-05-30 03:44:47,20.949s,PASSED
+"callTestCase(findTestCase(""Internal Test Cases/Successful Login""), [""Username"":"""", ""Password"":""""], STOP_ON_FAILURE)",Chrome 91.0.4472.77,,,2021-05-30 03:44:27,2021-05-30 03:44:31,4.379s,PASSED
+"for ([rowNum = 1, rowNum <= findTestData(""Internal/Internal Teamname"").getRowNumbers(), (rowNum++)])",Chrome 91.0.4472.77,,,2021-05-30 03:44:31,2021-05-30 03:44:47,15.625s,PASSED
+closeBrowser(),Chrome 91.0.4472.77,,,2021-05-30 03:44:47,2021-05-30 03:44:47,0.683s,PASSED
+,,,,,,,
+Test Cases/Internal Test Cases/EditChannelHeader,Chrome 91.0.4472.77,,,2021-05-30 03:44:47,2021-05-30 03:46:04,1m - 16.456s,FAILED
+"callTestCase(findTestCase(""Internal Test Cases/Successful Login""), [""Username"":"""", ""Password"":""""], STOP_ON_FAILURE)",Chrome 91.0.4472.77,,,2021-05-30 03:44:48,2021-05-30 03:44:52,4.317s,PASSED
+"for ([rowNum = 1, rowNum <= findTestData(""Internal/Internal Channel Header"").getRowNumbers(), (rowNum++)])",Chrome 91.0.4472.77,,,2021-05-30 03:44:52,2021-05-30 03:46:04,1m - 11.840s,FAILED
+,,,,,,,
+Test Cases/Internal Test Cases/EditChannelPurpose,Chrome 91.0.4472.77,,,2021-05-30 03:46:04,2021-05-30 03:46:28,24.153s,PASSED
+"callTestCase(findTestCase(""Internal Test Cases/Successful Login""), [""Username"":"""", ""Password"":""""], STOP_ON_FAILURE)",Chrome 91.0.4472.77,,,2021-05-30 03:46:04,2021-05-30 03:46:09,5.035s,PASSED
+"for ([rowNum = 1, rowNum <= findTestData(""Internal/Internal Channel Purpose"").getRowNumbers(), (rowNum++)])",Chrome 91.0.4472.77,,,2021-05-30 03:46:09,2021-05-30 03:46:27,18.129s,PASSED
+closeBrowser(),Chrome 91.0.4472.77,,,2021-05-30 03:46:27,2021-05-30 03:46:28,0.697s,PASSED
+,,,,,,,
+Test Cases/Internal Test Cases/EditFullName,Chrome 91.0.4472.77,,,2021-05-30 03:46:28,2021-05-30 03:46:54,25.714s,PASSED
+"callTestCase(findTestCase(""Internal Test Cases/Successful Login""), [""Username"":"""", ""Password"":""""], STOP_ON_FAILURE)",Chrome 91.0.4472.77,,,2021-05-30 03:46:28,2021-05-30 03:46:33,4.391s,PASSED
+"for ([rowNum = 1, rowNum <= findTestData(""Internal/Internal Fullname"").getRowNumbers(), (rowNum++)])",Chrome 91.0.4472.77,,,2021-05-30 03:46:33,2021-05-30 03:46:53,20.392s,PASSED
+closeBrowser(),Chrome 91.0.4472.77,,,2021-05-30 03:46:53,2021-05-30 03:46:54,0.631s,PASSED
+,,,,,,,
+Test Cases/Internal Test Cases/EditNickName,Chrome 91.0.4472.77,,,2021-05-30 03:46:54,2021-05-30 03:47:17,22.789s,PASSED
+"callTestCase(findTestCase(""Internal Test Cases/Successful Login""), [""Username"":"""", ""Password"":""""], STOP_ON_FAILURE)",Chrome 91.0.4472.77,,,2021-05-30 03:46:54,2021-05-30 03:46:58,4.383s,PASSED
+"for ([rowNum = 1, rowNum <= findTestData(""Internal/Internal Nickname"").getRowNumbers(), (rowNum++)])",Chrome 91.0.4472.77,,,2021-05-30 03:46:58,2021-05-30 03:47:16,17.452s,PASSED
+closeBrowser(),Chrome 91.0.4472.77,,,2021-05-30 03:47:16,2021-05-30 03:47:17,0.658s,PASSED
+,,,,,,,
+Test Cases/Internal Test Cases/EditPosition,Chrome 91.0.4472.77,,,2021-05-30 03:47:17,2021-05-30 03:47:43,26.008s,PASSED
+"callTestCase(findTestCase(""Internal Test Cases/Successful Login""), [""Username"":"""", ""Password"":""""], STOP_ON_FAILURE)",Chrome 91.0.4472.77,,,2021-05-30 03:47:17,2021-05-30 03:47:21,4.515s,PASSED
+"for ([rowNum = 1, rowNum <= findTestData(""Internal/Internal Position"").getRowNumbers(), (rowNum++)])",Chrome 91.0.4472.77,,,2021-05-30 03:47:21,2021-05-30 03:47:42,20.496s,PASSED
+closeBrowser(),Chrome 91.0.4472.77,,,2021-05-30 03:47:42,2021-05-30 03:47:43,0.701s,PASSED
+,,,,,,,
+Test Cases/Internal Test Cases/EditUsername,Chrome 91.0.4472.77,,,2021-05-30 03:47:43,2021-05-30 03:53:19,5m - 36.021s,PASSED
+"callTestCase(findTestCase(""Internal Test Cases/Successful Login""), [""Username"":"""", ""Password"":""""], STOP_ON_FAILURE)",Chrome 91.0.4472.77,,,2021-05-30 03:47:43,2021-05-30 03:47:47,4.424s,PASSED
+"for ([rowNum = 1, rowNum <= findTestData(""Internal/Internal Username"").getRowNumbers(), (rowNum++)])",Chrome 91.0.4472.77,,,2021-05-30 03:47:47,2021-05-30 03:53:18,5m - 30.623s,PASSED
+closeBrowser(),Chrome 91.0.4472.77,,,2021-05-30 03:53:18,2021-05-30 03:53:19,0.681s,PASSED
+,,,,,,,
+Test Cases/Internal Test Cases/FindChanelFailed,Chrome 91.0.4472.77,,,2021-05-30 03:53:19,2021-05-30 03:53:31,12.436s,PASSED
+"callTestCase(findTestCase(""Internal Test Cases/Successful Login""), [""Username"":"""", ""Password"":""""], STOP_ON_FAILURE)",Chrome 91.0.4472.77,,,2021-05-30 03:53:19,2021-05-30 03:53:23,4.392s,PASSED
+"click(findTestObject(""Object Repository/Page_Town Square - TEAM NAME Mattermost/span_Find channel""))",Chrome 91.0.4472.77,,,2021-05-30 03:53:23,2021-05-30 03:53:25,1.633s,PASSED
+"for ([rowNum = 1, rowNum <= findTestData(""Internal/Internal Name Channel Fail"").getRowNumbers(), (rowNum++)])",Chrome 91.0.4472.77,,,2021-05-30 03:53:25,2021-05-30 03:53:29,4.433s,PASSED
+"verifyTextPresent(""Check the spelling or try another search"", false)",Chrome 91.0.4472.77,,,2021-05-30 03:53:29,2021-05-30 03:53:30,1.057s,PASSED
+closeBrowser(),Chrome 91.0.4472.77,,,2021-05-30 03:53:30,2021-05-30 03:53:31,0.615s,PASSED
+,,,,,,,
+Test Cases/Internal Test Cases/FindChanelSuccess,Chrome 91.0.4472.77,,,2021-05-30 03:53:31,2021-05-30 03:53:42,11.422s,PASSED
+"callTestCase(findTestCase(""Internal Test Cases/Successful Login""), [""Username"":"""", ""Password"":""""], STOP_ON_FAILURE)",Chrome 91.0.4472.77,,,2021-05-30 03:53:31,2021-05-30 03:53:36,4.391s,PASSED
+"click(findTestObject(""Object Repository/Find chanel/Page_span_Town Square - Team 1 Mattermost/span_Find channel""))",Chrome 91.0.4472.77,,,2021-05-30 03:53:36,2021-05-30 03:53:37,1.641s,PASSED
+"for ([rowNum = 1, rowNum <= findTestData(""Internal/Internal Name Channel"").getRowNumbers(), (rowNum++)])",Chrome 91.0.4472.77,,,2021-05-30 03:53:37,2021-05-30 03:53:42,4.467s,PASSED
+closeBrowser(),Chrome 91.0.4472.77,,,2021-05-30 03:53:42,2021-05-30 03:53:42,0.638s,PASSED
+,,,,,,,
+Test Cases/Internal Test Cases/RenameChannel,Chrome 91.0.4472.77,,,2021-05-30 03:53:42,2021-05-30 03:54:08,25.952s,PASSED
+"callTestCase(findTestCase(""Internal Test Cases/Successful Login""), [""Username"":"""", ""Password"":""""], STOP_ON_FAILURE)",Chrome 91.0.4472.77,,,2021-05-30 03:53:43,2021-05-30 03:53:47,4.446s,PASSED
+"for ([rowNum = 1, rowNum <= findTestData(""Internal/Internal Rename"").getRowNumbers(), (rowNum++)])",Chrome 91.0.4472.77,,,2021-05-30 03:53:47,2021-05-30 03:54:08,20.507s,PASSED
+closeBrowser(),Chrome 91.0.4472.77,,,2021-05-30 03:54:08,2021-05-30 03:54:08,0.698s,PASSED
+,,,,,,,
+Test Cases/Internal Test Cases/SearchInChannel,Chrome 91.0.4472.77,,,2021-05-30 03:54:08,2021-05-30 03:54:56,47.131s,PASSED
+"callTestCase(findTestCase(""Internal Test Cases/Successful Login""), [""Username"":"""", ""Password"":""""], STOP_ON_FAILURE)",Chrome 91.0.4472.77,,,2021-05-30 03:54:09,2021-05-30 03:54:13,4.372s,PASSED
+"click(findTestObject(""Object Repository/Page_Town Square - TEAM NAME Mattermost/span_Town Square""))",Chrome 91.0.4472.77,,,2021-05-30 03:54:13,2021-05-30 03:54:15,1.721s,PASSED
+"click(findTestObject(""Object Repository/Page_Town Square - TEAM NAME Mattermost/svg""))",Chrome 91.0.4472.77,,,2021-05-30 03:54:15,2021-05-30 03:54:46,31.628s,PASSED
+"for ([rowNum = 1, rowNum <= findTestData(""Internal/Internal Key For Search"").getRowNumbers(), (rowNum++)])",Chrome 91.0.4472.77,,,2021-05-30 03:54:46,2021-05-30 03:54:55,8.461s,PASSED
+closeBrowser(),Chrome 91.0.4472.77,,,2021-05-30 03:54:55,2021-05-30 03:54:56,0.660s,PASSED
+,,,,,,,
+Test Cases/Internal Test Cases/Successful Login,Chrome 91.0.4472.77,,,2021-05-30 03:54:56,2021-05-30 03:55:00,4.297s,PASSED
+"openBrowser("""")",Chrome 91.0.4472.77,,,2021-05-30 03:54:56,2021-05-30 03:54:57,1.175s,PASSED
+"navigateToUrl(""https://chudenangcao2021.cf/"")",Chrome 91.0.4472.77,,,2021-05-30 03:54:57,2021-05-30 03:54:57,0.610s,PASSED
+"setText(findTestObject(""Object Repository/Page_Mattermost/input_All team communication in one place, _dcc84b""), findTestData(""Internal/Internal Login Data"").getValue(1, 1))",Chrome 91.0.4472.77,,,2021-05-30 03:54:57,2021-05-30 03:54:59,1.344s,PASSED
+"setEncryptedText(findTestObject(""Object Repository/Page_Mattermost/input_All team communication in one place, _a3edc6""), findTestData(""Internal/Internal Login Data"").getValue(2, 1))",Chrome 91.0.4472.77,,,2021-05-30 03:54:59,2021-05-30 03:54:59,0.586s,PASSED
+"click(findTestObject(""Object Repository/Page_Mattermost/button_Sign in""))",Chrome 91.0.4472.77,,,2021-05-30 03:54:59,2021-05-30 03:55:00,0.529s,PASSED
+"verifyLinksAccessible([""https://chudenangcao2021.cf/cdnc-cnpm-2021/channels""])",Chrome 91.0.4472.77,,,2021-05-30 03:55:00,2021-05-30 03:55:00,0.030s,PASSED
+,,,,,,,
+Test Cases/Data CSV Test Case/ChangEmail,Chrome 91.0.4472.77,,,2021-05-30 03:55:00,2021-05-30 03:55:30,30.121s,PASSED
+"callTestCase(findTestCase(""Internal Test Cases/Successful Login""), [""Username"":"""", ""Password"":""""], STOP_ON_FAILURE)",Chrome 91.0.4472.77,,,2021-05-30 03:55:00,2021-05-30 03:55:05,4.960s,PASSED
+"for ([rowNum = 1, rowNum <= findTestData(""Data CSV/Email"").getRowNumbers(), (rowNum++)])",Chrome 91.0.4472.77,,,2021-05-30 03:55:05,2021-05-30 03:55:29,24.171s,PASSED
+closeBrowser(),Chrome 91.0.4472.77,,,2021-05-30 03:55:29,2021-05-30 03:55:30,0.659s,PASSED
+,,,,,,,
+Test Cases/Data CSV Test Case/LoginWrongEmail,Chrome 91.0.4472.77,,,2021-05-30 03:55:30,2021-05-30 03:55:45,15.427s,PASSED
+"openBrowser("""")",Chrome 91.0.4472.77,,,2021-05-30 03:55:30,2021-05-30 03:55:31,1.198s,PASSED
+"navigateToUrl(""https://chudenangcao2021.cf/"")",Chrome 91.0.4472.77,,,2021-05-30 03:55:31,2021-05-30 03:55:32,0.637s,PASSED
+"for ([rowNum = 1, rowNum <= findTestData(""Data CSV/Wrong Email"").getRowNumbers(), (rowNum++)])",Chrome 91.0.4472.77,,,2021-05-30 03:55:32,2021-05-30 03:55:45,12.658s,PASSED
+closeBrowser(),Chrome 91.0.4472.77,,,2021-05-30 03:55:45,2021-05-30 03:55:45,0.649s,PASSED
+,,,,,,,
+Test Cases/Data CSV Test Case/LoginWrongPassword,Chrome 91.0.4472.77,,,2021-05-30 03:55:45,2021-05-30 03:56:01,15.730s,PASSED
+"openBrowser("""")",Chrome 91.0.4472.77,,,2021-05-30 03:55:46,2021-05-30 03:55:47,1.138s,PASSED
+"navigateToUrl(""https://chudenangcao2021.cf/"")",Chrome 91.0.4472.77,,,2021-05-30 03:55:47,2021-05-30 03:55:47,0.591s,PASSED
+"for ([rowNum = 1, rowNum <= findTestData(""Data CSV/Wrong Password"").getRowNumbers(), (rowNum++)])",Chrome 91.0.4472.77,,,2021-05-30 03:55:47,2021-05-30 03:56:00,13.047s,PASSED
+closeBrowser(),Chrome 91.0.4472.77,,,2021-05-30 03:56:00,2021-05-30 03:56:01,0.672s,PASSED
+,,,,,,,
+Test Cases/Data CSV Test Case/SearchMember,Chrome 91.0.4472.77,,,2021-05-30 03:56:01,2021-05-30 03:56:20,18.518s,PASSED
+"callTestCase(findTestCase(""Internal Test Cases/Successful Login""), [""Username"":"""", ""Password"":""""], STOP_ON_FAILURE)",Chrome 91.0.4472.77,,,2021-05-30 03:56:01,2021-05-30 03:56:06,4.374s,PASSED
+"for ([rowNum = 1, rowNum <= findTestData(""Data CSV/SearchMember"").getRowNumbers(), (rowNum++)])",Chrome 91.0.4472.77,,,2021-05-30 03:56:06,2021-05-30 03:56:19,13.159s,PASSED
+closeBrowser(),Chrome 91.0.4472.77,,,2021-05-30 03:56:19,2021-05-30 03:56:20,0.674s,PASSED
+,,,,,,,
+Test Cases/Data CSV Test Case/SetStatus,Chrome 91.0.4472.77,,,2021-05-30 03:56:20,2021-05-30 03:57:32,1m - 12.474s,FAILED
+"callTestCase(findTestCase(""Internal Test Cases/Successful Login""), [""Username"":"""", ""Password"":""""], STOP_ON_FAILURE)",Chrome 91.0.4472.77,,,2021-05-30 03:56:20,2021-05-30 03:56:25,4.560s,PASSED
+"for ([rowNum = 1, rowNum <= findTestData(""Data CSV/Set Status"").getRowNumbers(), (rowNum++)])",Chrome 91.0.4472.77,,,2021-05-30 03:56:25,2021-05-30 03:57:32,1m - 7.630s,FAILED
+,,,,,,,
+Test Cases/TestCasesIf/CallChangeTime,Chrome 91.0.4472.77,,,2021-05-30 03:57:32,2021-05-30 03:57:44,12.028s,PASSED
+"callTestCase(findTestCase(""Test Cases/TestCasesIf/Time24hIfUserNameThanTen""), [""username"":""cxtuan"", ""password"":""01672471821nT@""])",Chrome 91.0.4472.77,,,2021-05-30 03:57:32,2021-05-30 03:57:44,11.730s,PASSED
+,,,,,,,
+Test Cases/TestCasesIf/CallChangeUserName,Chrome 91.0.4472.77,,,2021-05-30 03:57:44,2021-05-30 03:58:00,15.879s,PASSED
+"callTestCase(findTestCase(""TestCasesIf/ChangeUserNameIfLessTen""), [""username"":""cxtuan"", ""password"":""01672471821nT@""])",Chrome 91.0.4472.77,,,2021-05-30 03:57:45,2021-05-30 03:58:00,15.578s,PASSED
+,,,,,,,
+Test Cases/TestCasesIf/ChangeUserNameIfLessTen,Chrome 91.0.4472.77,,,2021-05-30 03:58:00,2021-05-30 03:58:15,14.869s,PASSED
+"callTestCase(findTestCase(""Test Cases/Common Test Cases/Login""), [""Username"":username, ""Password"":password])",Chrome 91.0.4472.77,,,2021-05-30 03:58:00,2021-05-30 03:58:05,4.521s,PASSED
+"object = findTestObject(""Object Repository/IFObject/Page_TEST CHANNEL - TEAM NAME Mattermost/button_cxtuan_style--none sidebar-header-dropdown__icon"")",Chrome 91.0.4472.77,,,2021-05-30 03:58:05,2021-05-30 03:58:05,0.048s,PASSED
+bool = false,Chrome 91.0.4472.77,,,2021-05-30 03:58:05,2021-05-30 03:58:05,0.000s,PASSED
+try,Chrome 91.0.4472.77,,,2021-05-30 03:58:05,2021-05-30 03:58:06,1.433s,PASSED
+Finally,Chrome 91.0.4472.77,,,2021-05-30 03:58:06,2021-05-30 03:58:15,8.847s,PASSED
+,,,,,,,
+Test Cases/TestCasesIf/CheckNavToNewChannel,Chrome 91.0.4472.77,,,2021-05-30 03:58:15,2021-05-30 03:58:25,9.736s,FAILED
+"callTestCase(findTestCase(""Test Cases/Common Test Cases/Login""), [""Username"":""cxtuan"", ""Password"":""01672471821nT@""])",Chrome 91.0.4472.77,,,2021-05-30 03:58:15,2021-05-30 03:58:20,4.601s,PASSED
+"object = findTestObject(""Object Repository/IFObject/Page_TEST CHANNEL - TEAM NAME Mattermost/div_CtrlK_MenuWrapper AddChannelDropdown"")",Chrome 91.0.4472.77,,,2021-05-30 03:58:20,2021-05-30 03:58:20,0.055s,PASSED
+bool = false,Chrome 91.0.4472.77,,,2021-05-30 03:58:20,2021-05-30 03:58:20,0.001s,PASSED
+try,Chrome 91.0.4472.77,,,2021-05-30 03:58:20,2021-05-30 03:58:21,1.467s,PASSED
+Finally,Chrome 91.0.4472.77,,,2021-05-30 03:58:21,2021-05-30 03:58:25,3.312s,FAILED
+,,,,,,,
+Test Cases/TestCasesIf/IfSwitchChannel,Chrome 91.0.4472.77,,,2021-05-30 03:58:25,2021-05-30 03:59:06,40.982s,FAILED
+"callTestCase(findTestCase(""Test Cases/Common Test Cases/Login""), [""Username"":Username, ""Password"":Password])",Chrome 91.0.4472.77,,,2021-05-30 03:58:25,2021-05-30 03:58:30,5.221s,PASSED
+"click(findTestObject(""Object Repository/IFObject/Page_span_Town Square - TEAM NAME Mattermost/button_Find channelCtrlK""))",Chrome 91.0.4472.77,,,2021-05-30 03:58:30,2021-05-30 03:59:06,35.411s,FAILED
+,,,,,,,
+Test Cases/TestCasesIf/LeaveTeam,Chrome 91.0.4472.77,,,2021-05-30 03:59:06,2021-05-30 03:59:43,37.767s,PASSED
+"callTestCase(findTestCase(""Test Cases/Common Test Cases/Login""), [""Username"":""cxtuan"", ""Password"":""01672471821nT@""])",Chrome 91.0.4472.77,,,2021-05-30 03:59:06,2021-05-30 03:59:11,5.305s,PASSED
+"object = findTestObject(""Object Repository/IFObject/Page_TEST CHANNEL - TEAM NAME Mattermost/div_te"")",Chrome 91.0.4472.77,,,2021-05-30 03:59:11,2021-05-30 03:59:11,0.054s,PASSED
+bool = false,Chrome 91.0.4472.77,,,2021-05-30 03:59:11,2021-05-30 03:59:11,0.000s,PASSED
+try,Chrome 91.0.4472.77,,,2021-05-30 03:59:11,2021-05-30 03:59:43,31.381s,FAILED
+catch (Exception ex),Chrome 91.0.4472.77,,,2021-05-30 03:59:43,2021-05-30 03:59:43,0.000s,PASSED
+Finally,Chrome 91.0.4472.77,,,2021-05-30 03:59:43,2021-05-30 03:59:43,0.720s,PASSED
+,,,,,,,
+Test Cases/TestCasesIf/Time24hIfUserNameThanTen,Chrome 91.0.4472.77,,,2021-05-30 03:59:43,2021-05-30 03:59:53,10.033s,PASSED
+"callTestCase(findTestCase(""Test Cases/Common Test Cases/Login""), [""Username"":username, ""Password"":password])",Chrome 91.0.4472.77,,,2021-05-30 03:59:43,2021-05-30 03:59:48,4.548s,PASSED
+"object = findTestObject(""Object Repository/IFObject/Page_TEST CHANNEL - TEAM NAME Mattermost/button_cxtuan_style--none sidebar-header-dropdown__icon"")",Chrome 91.0.4472.77,,,2021-05-30 03:59:48,2021-05-30 03:59:48,0.045s,PASSED
+bool = false,Chrome 91.0.4472.77,,,2021-05-30 03:59:48,2021-05-30 03:59:48,0.000s,PASSED
+try,Chrome 91.0.4472.77,,,2021-05-30 03:59:48,2021-05-30 03:59:50,1.440s,PASSED
+Finally,Chrome 91.0.4472.77,,,2021-05-30 03:59:50,2021-05-30 03:59:53,3.975s,PASSED

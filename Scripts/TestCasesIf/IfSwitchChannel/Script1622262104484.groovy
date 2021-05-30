@@ -17,9 +17,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
-
-WebUI.navigateToUrl('https://chudenangcao2021.cf/login')
 
 WebUI.callTestCase(findTestCase('Test Cases/Common Test Cases/Login'),['Username':Username,'Password':Password])
 

@@ -365,4 +365,112 @@
          <variableId>4db07a11-2d40-4ef5-9a6e-de0cab1f71c0</variableId>
       </variableLink>
    </testCaseLink>
+   <testCaseLink>
+      <guid>f11e447e-e9bd-4f1e-a55f-bcca281366d1</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Data CSV Test Case/ChangEmail</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>ec3df720-36b0-46eb-b121-76308f36440f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Data CSV Test Case/LoginWrongEmail</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>fa44547e-df2d-495d-87ba-0e939c754846</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Data CSV Test Case/LoginWrongPassword</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>2e158584-a0a7-4fdf-9666-e71b3114fe58</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Data CSV Test Case/SearchMember</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a73b0739-23c8-4cd7-ad03-16498519bacf</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Data CSV Test Case/SetStatus</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>fb1a6e74-7a40-4be1-b61d-168880e198fe</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TestCasesIf/CallChangeTime</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>993e369d-8cb5-46bc-a368-96265ba05190</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TestCasesIf/CallChangeUserName</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>43773152-b3c5-4c94-bc93-41cfd29bdd39</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TestCasesIf/ChangeUserNameIfLessTen</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>385d4b5f-6fbe-45a1-8554-00f7200563af</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>ded4549e-b82a-4956-8717-5afa3b0a583e</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>ae187c51-7cb1-4b5a-8b7f-c1677ee45b97</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TestCasesIf/CheckNavToNewChannel</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>523aa0d9-25cd-4bc9-9eb0-82a061641f29</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TestCasesIf/IfSwitchChannel</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>a9431cb9-9064-405f-b7b7-d6ef52aea595</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>b06cf569-771d-42fd-9049-ae5aca91f8b8</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>aea2dbfa-e75a-4772-b760-d7a81553571c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TestCasesIf/LeaveTeam</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>55581f4e-d904-4e22-83d2-82646765a9f9</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TestCasesIf/Time24hIfUserNameThanTen</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>18cadcc7-1f91-4235-a5e1-4b81246c2258</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>fdae9993-2909-4f63-bc96-382e8604c44d</variableId>
+      </variableLink>
+   </testCaseLink>
 </TestSuiteEntity>
